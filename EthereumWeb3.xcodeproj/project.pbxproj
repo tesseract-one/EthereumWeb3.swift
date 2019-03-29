@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8AB2127520365CFBB6C67CF4 /* Pods_EthereumWeb3Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E5883D99FAB584D492AF19D /* Pods_EthereumWeb3Tests.framework */; };
+		927C5A9B224E4D3400F2AA50 /* EthereumWeb3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927C5A91224E4D3400F2AA50 /* EthereumWeb3.framework */; };
+		927C5AA0224E4D3400F2AA50 /* EthereumWeb3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C5A9F224E4D3400F2AA50 /* EthereumWeb3Tests.swift */; };
+		927C5AB3224E52F700F2AA50 /* Transaction+Web3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C5AB0224E52F700F2AA50 /* Transaction+Web3.swift */; };
+		927C5AB4224E52F700F2AA50 /* TypedData+Web3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C5AB1224E52F700F2AA50 /* TypedData+Web3.swift */; };
+		927C5AB5224E52F700F2AA50 /* EthereumSignProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C5AB2224E52F700F2AA50 /* EthereumSignProvider.swift */; };
+		927C5AB7224E542A00F2AA50 /* Response+Web3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C5AB6224E542A00F2AA50 /* Response+Web3.swift */; };
+		927C5AB9224E6B6D00F2AA50 /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C5AB8224E6B6D00F2AA50 /* Accounts.swift */; };
+		927C5ABB224E6BA700F2AA50 /* SignData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C5ABA224E6BA700F2AA50 /* SignData.swift */; };
+		927C5ABD224E6BEB00F2AA50 /* SignTypedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C5ABC224E6BEB00F2AA50 /* SignTypedData.swift */; };
+		927C5AC0224E6C3A00F2AA50 /* SendTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C5ABF224E6C3A00F2AA50 /* SendTransaction.swift */; };
+		927C5AC2224E6CAB00F2AA50 /* Web3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C5AC1224E6CAB00F2AA50 /* Web3.swift */; };
+		927C5AC6224E779700F2AA50 /* TesseractEthereumWeb3.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 927C5AC5224E779700F2AA50 /* TesseractEthereumWeb3.podspec */; };
+		E7C92B0B70A3B9BDE8EA5932 /* Pods_EthereumWeb3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5159CD79F15DA32935A0D46E /* Pods_EthereumWeb3.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		927C5A9C224E4D3400F2AA50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 927C5A88224E4D3400F2AA50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 927C5A90224E4D3400F2AA50;
+			remoteInfo = EthereumWeb3;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E5883D99FAB584D492AF19D /* Pods_EthereumWeb3Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EthereumWeb3Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CCAED76ED2CC4A04F7C295D /* Pods-EthereumWeb3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EthereumWeb3.debug.xcconfig"; path = "Target Support Files/Pods-EthereumWeb3/Pods-EthereumWeb3.debug.xcconfig"; sourceTree = "<group>"; };
+		3F0E3FFA2F45BD046E9EF200 /* Pods-EthereumWeb3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EthereumWeb3.release.xcconfig"; path = "Target Support Files/Pods-EthereumWeb3/Pods-EthereumWeb3.release.xcconfig"; sourceTree = "<group>"; };
+		43F33D0FA13926B32981D09E /* Pods-EthereumWeb3Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EthereumWeb3Tests.release.xcconfig"; path = "Target Support Files/Pods-EthereumWeb3Tests/Pods-EthereumWeb3Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5159CD79F15DA32935A0D46E /* Pods_EthereumWeb3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EthereumWeb3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		865FC15C29790A8B59171481 /* Pods-EthereumWeb3Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EthereumWeb3Tests.debug.xcconfig"; path = "Target Support Files/Pods-EthereumWeb3Tests/Pods-EthereumWeb3Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		927C5A91224E4D3400F2AA50 /* EthereumWeb3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EthereumWeb3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		927C5A95224E4D3400F2AA50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		927C5A9A224E4D3400F2AA50 /* EthereumWeb3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EthereumWeb3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		927C5A9F224E4D3400F2AA50 /* EthereumWeb3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumWeb3Tests.swift; sourceTree = "<group>"; };
+		927C5AA1224E4D3400F2AA50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		927C5AB0224E52F700F2AA50 /* Transaction+Web3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Transaction+Web3.swift"; sourceTree = "<group>"; };
+		927C5AB1224E52F700F2AA50 /* TypedData+Web3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TypedData+Web3.swift"; sourceTree = "<group>"; };
+		927C5AB2224E52F700F2AA50 /* EthereumSignProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumSignProvider.swift; sourceTree = "<group>"; };
+		927C5AB6224E542A00F2AA50 /* Response+Web3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Response+Web3.swift"; sourceTree = "<group>"; };
+		927C5AB8224E6B6D00F2AA50 /* Accounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accounts.swift; sourceTree = "<group>"; };
+		927C5ABA224E6BA700F2AA50 /* SignData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignData.swift; sourceTree = "<group>"; };
+		927C5ABC224E6BEB00F2AA50 /* SignTypedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignTypedData.swift; sourceTree = "<group>"; };
+		927C5ABF224E6C3A00F2AA50 /* SendTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendTransaction.swift; sourceTree = "<group>"; };
+		927C5AC1224E6CAB00F2AA50 /* Web3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web3.swift; sourceTree = "<group>"; };
+		927C5AC5224E779700F2AA50 /* TesseractEthereumWeb3.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TesseractEthereumWeb3.podspec; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		927C5A8E224E4D3400F2AA50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7C92B0B70A3B9BDE8EA5932 /* Pods_EthereumWeb3.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		927C5A97224E4D3400F2AA50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				927C5A9B224E4D3400F2AA50 /* EthereumWeb3.framework in Frameworks */,
+				8AB2127520365CFBB6C67CF4 /* Pods_EthereumWeb3Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E3CAAA0AF527106799F4C7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CCAED76ED2CC4A04F7C295D /* Pods-EthereumWeb3.debug.xcconfig */,
+				3F0E3FFA2F45BD046E9EF200 /* Pods-EthereumWeb3.release.xcconfig */,
+				865FC15C29790A8B59171481 /* Pods-EthereumWeb3Tests.debug.xcconfig */,
+				43F33D0FA13926B32981D09E /* Pods-EthereumWeb3Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		927C5A87224E4D3400F2AA50 = {
+			isa = PBXGroup;
+			children = (
+				927C5AC5224E779700F2AA50 /* TesseractEthereumWeb3.podspec */,
+				927C5AAB224E4EFB00F2AA50 /* Sources */,
+				927C5AAD224E4F0800F2AA50 /* Tests */,
+				927C5A92224E4D3400F2AA50 /* Products */,
+				4E3CAAA0AF527106799F4C7E /* Pods */,
+				A9C4BDB27F3D893F2616DF09 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		927C5A92224E4D3400F2AA50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				927C5A91224E4D3400F2AA50 /* EthereumWeb3.framework */,
+				927C5A9A224E4D3400F2AA50 /* EthereumWeb3Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		927C5A93224E4D3400F2AA50 /* EthereumWeb3 */ = {
+			isa = PBXGroup;
+			children = (
+				927C5ABE224E6BF200F2AA50 /* Methods */,
+				927C5AB2224E52F700F2AA50 /* EthereumSignProvider.swift */,
+				927C5AB1224E52F700F2AA50 /* TypedData+Web3.swift */,
+				927C5AB0224E52F700F2AA50 /* Transaction+Web3.swift */,
+				927C5AB6224E542A00F2AA50 /* Response+Web3.swift */,
+				927C5AC1224E6CAB00F2AA50 /* Web3.swift */,
+				927C5A95224E4D3400F2AA50 /* Info.plist */,
+			);
+			path = EthereumWeb3;
+			sourceTree = "<group>";
+		};
+		927C5A9E224E4D3400F2AA50 /* EthereumWeb3Tests */ = {
+			isa = PBXGroup;
+			children = (
+				927C5A9F224E4D3400F2AA50 /* EthereumWeb3Tests.swift */,
+				927C5AA1224E4D3400F2AA50 /* Info.plist */,
+			);
+			path = EthereumWeb3Tests;
+			sourceTree = "<group>";
+		};
+		927C5AAB224E4EFB00F2AA50 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				927C5A93224E4D3400F2AA50 /* EthereumWeb3 */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		927C5AAD224E4F0800F2AA50 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				927C5A9E224E4D3400F2AA50 /* EthereumWeb3Tests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		927C5ABE224E6BF200F2AA50 /* Methods */ = {
+			isa = PBXGroup;
+			children = (
+				927C5AB8224E6B6D00F2AA50 /* Accounts.swift */,
+				927C5ABA224E6BA700F2AA50 /* SignData.swift */,
+				927C5ABC224E6BEB00F2AA50 /* SignTypedData.swift */,
+				927C5ABF224E6C3A00F2AA50 /* SendTransaction.swift */,
+			);
+			path = Methods;
+			sourceTree = "<group>";
+		};
+		A9C4BDB27F3D893F2616DF09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5159CD79F15DA32935A0D46E /* Pods_EthereumWeb3.framework */,
+				0E5883D99FAB584D492AF19D /* Pods_EthereumWeb3Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		927C5A8C224E4D3400F2AA50 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		927C5A90224E4D3400F2AA50 /* EthereumWeb3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 927C5AA5224E4D3400F2AA50 /* Build configuration list for PBXNativeTarget "EthereumWeb3" */;
+			buildPhases = (
+				685D1CA5196AC7D3D1CB546E /* [CP] Check Pods Manifest.lock */,
+				927C5A8C224E4D3400F2AA50 /* Headers */,
+				927C5A8D224E4D3400F2AA50 /* Sources */,
+				927C5A8E224E4D3400F2AA50 /* Frameworks */,
+				927C5A8F224E4D3400F2AA50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EthereumWeb3;
+			productName = EthereumWeb3;
+			productReference = 927C5A91224E4D3400F2AA50 /* EthereumWeb3.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		927C5A99224E4D3400F2AA50 /* EthereumWeb3Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 927C5AA8224E4D3400F2AA50 /* Build configuration list for PBXNativeTarget "EthereumWeb3Tests" */;
+			buildPhases = (
+				542C2639C2F1B2CBDC3FCB42 /* [CP] Check Pods Manifest.lock */,
+				927C5A96224E4D3400F2AA50 /* Sources */,
+				927C5A97224E4D3400F2AA50 /* Frameworks */,
+				927C5A98224E4D3400F2AA50 /* Resources */,
+				A8D3CFD2F3C1F8ECDE088601 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				927C5A9D224E4D3400F2AA50 /* PBXTargetDependency */,
+			);
+			name = EthereumWeb3Tests;
+			productName = EthereumWeb3Tests;
+			productReference = 927C5A9A224E4D3400F2AA50 /* EthereumWeb3Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		927C5A88224E4D3400F2AA50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Tesseract Systems, Inc.";
+				TargetAttributes = {
+					927C5A90224E4D3400F2AA50 = {
+						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
+					};
+					927C5A99224E4D3400F2AA50 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = 927C5A8B224E4D3400F2AA50 /* Build configuration list for PBXProject "EthereumWeb3" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 927C5A87224E4D3400F2AA50;
+			productRefGroup = 927C5A92224E4D3400F2AA50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				927C5A90224E4D3400F2AA50 /* EthereumWeb3 */,
+				927C5A99224E4D3400F2AA50 /* EthereumWeb3Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		927C5A8F224E4D3400F2AA50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				927C5AC6224E779700F2AA50 /* TesseractEthereumWeb3.podspec in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		927C5A98224E4D3400F2AA50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		542C2639C2F1B2CBDC3FCB42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EthereumWeb3Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		685D1CA5196AC7D3D1CB546E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EthereumWeb3-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8D3CFD2F3C1F8ECDE088601 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EthereumWeb3Tests/Pods-EthereumWeb3Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SerializableValue/Serializable.framework",
+				"${BUILT_PRODUCTS_DIR}/SipHash/SipHash.framework",
+				"${BUILT_PRODUCTS_DIR}/TesseractEthereumBase/EthereumBase.framework",
+				"${BUILT_PRODUCTS_DIR}/Web3/Web3.framework",
+				"${BUILT_PRODUCTS_DIR}/secp256k1.swift/secp256k1.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BigInt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Serializable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SipHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EthereumBase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Web3.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/secp256k1.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EthereumWeb3Tests/Pods-EthereumWeb3Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		927C5A8D224E4D3400F2AA50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				927C5AC0224E6C3A00F2AA50 /* SendTransaction.swift in Sources */,
+				927C5AB7224E542A00F2AA50 /* Response+Web3.swift in Sources */,
+				927C5AB3224E52F700F2AA50 /* Transaction+Web3.swift in Sources */,
+				927C5ABB224E6BA700F2AA50 /* SignData.swift in Sources */,
+				927C5AB9224E6B6D00F2AA50 /* Accounts.swift in Sources */,
+				927C5AC2224E6CAB00F2AA50 /* Web3.swift in Sources */,
+				927C5ABD224E6BEB00F2AA50 /* SignTypedData.swift in Sources */,
+				927C5AB4224E52F700F2AA50 /* TypedData+Web3.swift in Sources */,
+				927C5AB5224E52F700F2AA50 /* EthereumSignProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		927C5A96224E4D3400F2AA50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				927C5AA0224E4D3400F2AA50 /* EthereumWeb3Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		927C5A9D224E4D3400F2AA50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 927C5A90224E4D3400F2AA50 /* EthereumWeb3 */;
+			targetProxy = 927C5A9C224E4D3400F2AA50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		927C5AA3224E4D3400F2AA50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		927C5AA4224E4D3400F2AA50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		927C5AA6224E4D3400F2AA50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CCAED76ED2CC4A04F7C295D /* Pods-EthereumWeb3.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/EthereumWeb3/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = one.tesseract.ios.EthereumWeb3;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		927C5AA7224E4D3400F2AA50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F0E3FFA2F45BD046E9EF200 /* Pods-EthereumWeb3.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/EthereumWeb3/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = one.tesseract.ios.EthereumWeb3;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		927C5AA9224E4D3400F2AA50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 865FC15C29790A8B59171481 /* Pods-EthereumWeb3Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EthereumWeb3Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = one.tesseract.ios.EthereumWeb3Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		927C5AAA224E4D3400F2AA50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43F33D0FA13926B32981D09E /* Pods-EthereumWeb3Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EthereumWeb3Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = one.tesseract.ios.EthereumWeb3Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		927C5A8B224E4D3400F2AA50 /* Build configuration list for PBXProject "EthereumWeb3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				927C5AA3224E4D3400F2AA50 /* Debug */,
+				927C5AA4224E4D3400F2AA50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		927C5AA5224E4D3400F2AA50 /* Build configuration list for PBXNativeTarget "EthereumWeb3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				927C5AA6224E4D3400F2AA50 /* Debug */,
+				927C5AA7224E4D3400F2AA50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		927C5AA8224E4D3400F2AA50 /* Build configuration list for PBXNativeTarget "EthereumWeb3Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				927C5AA9224E4D3400F2AA50 /* Debug */,
+				927C5AAA224E4D3400F2AA50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 927C5A88224E4D3400F2AA50 /* Project object */;
+}
