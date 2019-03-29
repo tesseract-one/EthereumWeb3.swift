@@ -8,12 +8,12 @@ Web3 library which can be used with Tesseract Open Wallet or Tesseract Wallet li
 Supports eth, net and personal RPC api. Filters handled by polling on client.
                        DESC
 
-  s.homepage         = 'https://github.com/tesseract.1/ios-web3-ethereum'
+  s.homepage         = 'https://github.com/tesseract-one/ios-web3-ethereum'
 
   s.license          = { :type => 'Apache 2.0', :file => 'LICENSE' }
   s.author           = { 'Tesseract Systems, Inc.' => 'info@tesseract.one' }
-  s.source           = { :git => 'https://github.com/tesseract.1/ios-web3-ethereum.git', :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/tesseract_io'
+  s.source           = { :git => 'https://github.com/tesseract-one/ios-web3-ethereum.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/tesseract_one'
 
   s.ios.deployment_target = '8.0'
 
