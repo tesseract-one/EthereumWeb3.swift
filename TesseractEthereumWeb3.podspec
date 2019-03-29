@@ -17,8 +17,6 @@ Supports eth, net and personal RPC api. Filters handled by polling on client.
 
   s.ios.deployment_target = '8.0'
 
-  s.pod_target_xcconfig = { 'APPLICATION_EXTENSION_API_ONLY' => 'YES' }
-
   s.module_name = 'EthereumWeb3'
 
   s.subspec 'Core' do |ss|
