@@ -24,7 +24,10 @@ import Web3
 
 // eth_sendTransaction
 extension EthereumSignProvider {
-    func autoNonce(_ tx: EthereumTransaction, cb: @escaping (Result<EthereumTransaction, Error>) -> Void) {
+    func autoNonce(
+        _ tx: EthereumTransaction,
+        cb: @escaping (Swift.Result<EthereumTransaction, Error>) -> Void
+    ) {
         guard let from = tx.from else {
             cb(.failure(SignProviderError.mandatoryFieldMissing("from")))
             return
@@ -46,7 +49,10 @@ extension EthereumSignProvider {
         }
     }
     
-    func autoGas(_ tx: EthereumTransaction, cb: @escaping (Result<EthereumTransaction, Error>) -> Void) {
+    func autoGas(
+        _ tx: EthereumTransaction,
+        cb: @escaping (Swift.Result<EthereumTransaction, Error>
+    ) -> Void) {
         if tx.gas != nil && tx.gasPrice != nil {
             cb(.success(tx))
             return
@@ -100,7 +106,7 @@ extension EthereumSignProvider {
     
     func signTransaction(
         request: RPCRequest<[EthereumTransaction]>,
-        cb: @escaping (Result<EthereumSignedTransaction, Error>) -> Void
+        cb: @escaping (Swift.Result<EthereumSignedTransaction, Error>) -> Void
     ) {
         let signTx = { (web3Tx: EthereumTransaction, nId: UInt64, cId: UInt64) -> Void in
             let tx: Transaction
@@ -113,7 +119,7 @@ extension EthereumSignProvider {
             self.sign.eth_signTx(tx: tx, networkId: nId, chainId: cId) { result in
                 let signedTx = result
                     .mapError{$0}
-                    .flatMap { signature -> Result<EthereumSignedTransaction, Error> in
+                    .flatMap { signature -> Swift.Result<EthereumSignedTransaction, Error> in
                         do {
                             return .success(try EthereumSignedTransaction(
                                 tx: tx, signature: signature, chainId: BigUInt(cId)

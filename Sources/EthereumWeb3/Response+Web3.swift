@@ -21,7 +21,6 @@
 import Foundation
 import Web3
 
-typealias Result<Success, Failure: Error> = Swift.Result<Success, Failure>
 
 extension Web3Response {
     init(id: Int, result: Swift.Result<Result, Swift.Error>) {
@@ -32,10 +31,10 @@ extension Web3Response {
     }
 }
 
-extension Result {
+extension Swift.Result {
     func asyncMap<T: Codable>(id: Int,
         _ callback: @escaping (Web3Response<T>) -> Void,
-        mapper: @escaping (Success, @escaping (Result<T, Failure>) -> Void) -> Void) {
+        mapper: @escaping (Success, @escaping (Swift.Result<T, Failure>) -> Void) -> Void) {
         switch self {
         case .failure(let err): callback(Web3Response(id: id, error: err))
         case .success(let val):

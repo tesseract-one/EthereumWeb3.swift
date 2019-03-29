@@ -40,7 +40,7 @@ public class EthereumSignProvider: Web3InjectedProvider {
         networkId({ _ in }) // Prefetch network and chain id
     }
     
-    public func chainId(_ cb: @escaping (Result<UInt64, Error>) -> Void) {
+    public func chainId(_ cb: @escaping (Swift.Result<UInt64, Error>) -> Void) {
         if let chainId = _chainId {
             cb(.success(chainId))
             return
@@ -48,7 +48,7 @@ public class EthereumSignProvider: Web3InjectedProvider {
         networkId(cb)
     }
     
-    public func networkId(_ cb: @escaping (Result<UInt64, Error>) -> Void) {
+    public func networkId(_ cb: @escaping (Swift.Result<UInt64, Error>) -> Void) {
         if let networkId = _networkId {
             cb(.success(networkId))
             return
@@ -68,7 +68,9 @@ public class EthereumSignProvider: Web3InjectedProvider {
         }
     }
     
-    public func networkAndChainId(_ cb: @escaping (Result<(nId: UInt64, cId: UInt64), Error>) -> Void) {
+    public func networkAndChainId(
+        _ cb: @escaping (Swift.Result<(nId: UInt64, cId: UInt64), Error>) -> Void
+    ) {
         networkId { res in
             switch res {
             case .failure(let err): cb(.failure(err))
