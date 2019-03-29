@@ -78,7 +78,7 @@ public class EthereumSignProvider: Web3InjectedProvider {
         }
     }
     
-    func send<Params, Result>(request: RPCRequest<Params>, response: @escaping Web3ResponseCompletion<Result>) {
+    public func send<Params, Result>(request: RPCRequest<Params>, response: @escaping Web3ResponseCompletion<Result>) {
         switch request.method {
         case "eth_accounts":
             eth_accounts(id: request.id) { response($0 as! Web3Response<Result>) }
