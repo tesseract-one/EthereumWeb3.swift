@@ -32,7 +32,7 @@ public extension Transaction {
             from: from.web3,
             to: to?.web3,
             value: EthereumQuantity(quantity: value),
-            data: EthereumData(raw: data.bytes)
+            data: EthereumData(data.bytes)
         )
     }
 }
@@ -71,7 +71,7 @@ public extension EthereumSignedTransaction {
             gasLimit: EthereumQuantity(quantity: tx.gas),
             to: tx.to?.web3,
             value: EthereumQuantity(quantity: tx.value),
-            data: EthereumData(raw: tx.data.bytes),
+            data: EthereumData(tx.data.bytes),
             v: EthereumQuantity(quantity: v),
             r: EthereumQuantity.bytes(signature[0..<32].bytes),
             s: EthereumQuantity.bytes(signature[32..<64].bytes),

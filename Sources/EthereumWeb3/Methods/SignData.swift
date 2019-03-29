@@ -32,7 +32,7 @@ extension EthereumSignProvider {
                     data: Data(data.bytes),
                     networkId: networkId
                 ) {
-                    response($0.map{EthereumData(raw: $0.bytes)}.mapError{$0})
+                    response($0.map{EthereumData($0.bytes)}.mapError{$0})
                 }
             }
         }
