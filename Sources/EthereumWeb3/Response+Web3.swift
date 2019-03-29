@@ -21,6 +21,8 @@
 import Foundation
 import Web3
 
+typealias Result<Success, Failure: Error> = Swift.Result<Success, Failure>
+
 extension Web3Response {
     init(id: Int, result: Swift.Result<Result, Swift.Error>) {
         switch result {
