@@ -23,7 +23,7 @@ import BigInt
 import EthereumBase
 import Web3
 
-extension Transaction {
+public extension Transaction {
     var web3: EthereumTransaction {
         return EthereumTransaction(
             nonce: EthereumQuantity(quantity: nonce),
@@ -38,7 +38,7 @@ extension Transaction {
 }
 
 
-extension EthereumTransaction {
+public extension EthereumTransaction {
     func tes() throws -> Transaction {
         guard let nonce = nonce, let gas = gas, let gasPrice = gasPrice, let from = from else {
             throw EthereumSignedTransaction.Error.transactionInvalid
@@ -56,7 +56,7 @@ extension EthereumTransaction {
     }
 }
 
-extension EthereumSignedTransaction {
+public extension EthereumSignedTransaction {
     init(tx: Transaction, signature: Data, chainId: BigUInt) throws {
         guard signature.count == 65 else {
             throw EthereumSignedTransaction.Error.signatureMalformed
@@ -80,13 +80,13 @@ extension EthereumSignedTransaction {
     }
 }
 
-extension Address {
+public extension Address {
     var web3: EthereumAddress {
         return try! EthereumAddress(rawAddress: rawValue.bytes)
     }
 }
 
-extension EthereumAddress {
+public extension EthereumAddress {
     var tes: Address {
         return try! Address(rawAddress: Data(rawAddress))
     }
