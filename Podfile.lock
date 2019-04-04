@@ -9,7 +9,7 @@ PODS:
     - TesseractEthereumBase/Core (= 0.0.1)
   - TesseractEthereumBase/Core (0.0.1):
     - BigInt (~> 3.1)
-    - CryptoSwift (~> 0.15)
+    - CryptoSwift (~> 0.13)
     - SerializableValue (~> 0.0.1)
   - Web3 (0.3.1):
     - Web3/Core (= 0.3.1)
@@ -22,9 +22,9 @@ PODS:
     - Web3/Core
 
 DEPENDENCIES:
-  - SerializableValue (from `https://github.com/ypopovych/swift-serializable.git`, branch `master`)
-  - "TesseractEthereumBase (from `git@github.com:ypopovych/swift-ethereum-base.git`, branch `master`)"
-  - Web3 (from `https://github.com/crossroadlabs/Web3.swift.git`, branch `master`)
+  - SerializableValue (from `https://github.com/tesseract-one/swift-serializable.git`, branch `master`)
+  - TesseractEthereumBase (from `https://github.com/tesseract-one/swift-ethereum-base.git`, branch `master`)
+  - Web3 (from `https://github.com/tesseract-one/Web3.swift.git`, branch `master`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -36,24 +36,24 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   SerializableValue:
     :branch: master
-    :git: https://github.com/ypopovych/swift-serializable.git
+    :git: https://github.com/tesseract-one/swift-serializable.git
   TesseractEthereumBase:
     :branch: master
-    :git: "git@github.com:ypopovych/swift-ethereum-base.git"
+    :git: https://github.com/tesseract-one/swift-ethereum-base.git
   Web3:
     :branch: master
-    :git: https://github.com/crossroadlabs/Web3.swift.git
+    :git: https://github.com/tesseract-one/Web3.swift.git
 
 CHECKOUT OPTIONS:
   SerializableValue:
     :commit: a77ea4589520eac0406912dca1dc54466ffa82ac
-    :git: https://github.com/ypopovych/swift-serializable.git
+    :git: https://github.com/tesseract-one/swift-serializable.git
   TesseractEthereumBase:
-    :commit: 2c34b9f05450a3d7f080666a4466070aac2d591b
-    :git: "git@github.com:ypopovych/swift-ethereum-base.git"
+    :commit: 4597c5f222589480ef140187b270cc652ed27be4
+    :git: https://github.com/tesseract-one/swift-ethereum-base.git
   Web3:
-    :commit: 170d9c6777f759307ef2f9aa5ae98426212a84e7
-    :git: https://github.com/crossroadlabs/Web3.swift.git
+    :commit: 3d416183fade5b9c94b23bdb1c87d0fb865ccb69
+    :git: https://github.com/tesseract-one/Web3.swift.git
 
 SPEC CHECKSUMS:
   BigInt: 76b5dfdfa3e2e478d4ffdf161aeede5502e2742f
@@ -61,9 +61,9 @@ SPEC CHECKSUMS:
   secp256k1.swift: a7e7a214f6db6ce5db32cc6b2b45e5c4dd633634
   SerializableValue: 4dec77eadb50f94f4070f84a8826c51bc481e9cd
   SipHash: fad90a4683e420c52ef28063063dbbce248ea6d4
-  TesseractEthereumBase: 33148c974f63dd81e638d84a74415793c32bb9d5
+  TesseractEthereumBase: cc36a0266461f2bceaa18e10942bfc91e31d0fa3
   Web3: e9be7ef88585e252df50abc28538d6e4691c786e
 
-PODFILE CHECKSUM: 0389a243bd3a495946a60cc94f4fdad73fc7f905
+PODFILE CHECKSUM: ab47754836fdd3fcbd560155df732de31937fce7
 
 COCOAPODS: 1.6.1
