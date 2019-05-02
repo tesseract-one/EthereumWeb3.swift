@@ -147,4 +147,4 @@ web3.eth.sendTransaction(transaction: tx) { response in
 
 ## License
 
-`OEthereumWeb3.swift` is available under the Apache 2.0 license. See [the LICENSE file](https://raw.githubusercontent.com/tesseract-one/EthereumWeb3.swift/master/LICENSE) for more information.
+`EthereumWeb3.swift` is available under the Apache 2.0 license. See [the LICENSE file](https://raw.githubusercontent.com/tesseract-one/EthereumWeb3.swift/master/LICENSE) for more information.
