@@ -26,7 +26,7 @@ Add the following to your [Podfile](http://guides.cocoapods.org/using/the-podfil
 pod 'Tesseract.OpenWallet/Ethereum'
 pod 'Tesseract.EthereumWeb3'
 
-# Uncomment this line if you want to enable PromiseKit extensions
+# Uncomment this lines if you want to enable PromiseKit extensions
 # pod 'Tesseract.OpenWallet/EthereumPromiseKit'
 # pod 'Tesseract.EthereumWeb3/PromiseKit'
 ```
@@ -41,7 +41,7 @@ Add the following to your [Podfile](http://guides.cocoapods.org/using/the-podfil
 pod 'Tesseract.Wallet/Ethereum'
 pod 'Tesseract.EthereumWeb3'
 
-# Uncomment this line if you want to enable PromiseKit extensions
+# Uncomment this lines if you want to enable PromiseKit extensions
 # pod 'Tesseract.Wallet/EthereumPromiseKit'
 # pod 'Tesseract.EthereumWeb3/PromiseKit'
 ```
@@ -66,6 +66,8 @@ import EthereumWeb3
 let rpcUrl = "https://mainnet.infura.io/v3/{API-KEY}"
 
 // Initializing OpenWallet with Ethereum. Creating Web3 instance
+// Store your OpenWallet instance somewhere(AppDelegate, Context). It should be reused.
+// If you need only Web3, you can store it only(it will store OpenWallet inside itself).
 let web3 = OpenWallet(networks: [.Ethereum]).ethereum.web3(rpcUrl: rpcUrl)
 
 // Creating Transaction
