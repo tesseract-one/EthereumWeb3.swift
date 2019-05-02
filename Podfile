@@ -1,18 +1,20 @@
 use_frameworks!
-platform :ios, '10.0'
-
 inhibit_all_warnings!
 
-target :EthereumWeb3 do
-    pod 'TesseractEthereumBase', :git => 'https://github.com/tesseract-one/swift-ethereum-base.git', :branch => 'master'
-    pod 'SerializableValue', :git => 'https://github.com/tesseract-one/swift-serializable.git', :branch => 'master'
-    
+def common_pods
+    pod 'Tesseract.EthereumTypes', '~> 0.1'    
     pod 'Web3', :git => 'https://github.com/tesseract-one/Web3.swift.git', :branch => 'master'
+    pod 'PromiseKit/CorePromise', '~> 6.8'
 end
 
-target :EthereumWeb3Tests do
-  pod 'TesseractEthereumBase', :git => 'https://github.com/tesseract-one/swift-ethereum-base.git', :branch => 'master'
-  pod 'SerializableValue', :git => 'https://github.com/tesseract-one/swift-serializable.git', :branch => 'master'
-  
-  pod 'Web3', :git => 'https://github.com/tesseract-one/Web3.swift.git', :branch => 'master'
+target 'EthereumWeb3-iOS' do
+    platform :ios, '10.0'
+
+    common_pods
+end
+
+target 'EthereumWeb3Tests-iOS' do
+    platform :ios, '10.0'
+
+    common_pods
 end

@@ -20,7 +20,7 @@
 
 import Foundation
 import BigInt
-import EthereumBase
+import EthereumTypes
 import Web3
 
 public extension Transaction {

@@ -19,7 +19,7 @@
 //
 
 @_exported import Web3
-import EthereumBase
+import EthereumTypes
 
 
 public extension Web3 {

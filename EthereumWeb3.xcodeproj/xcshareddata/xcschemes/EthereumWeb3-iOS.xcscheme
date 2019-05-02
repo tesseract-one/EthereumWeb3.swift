@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "927C5A90224E4D3400F2AA50"
                BuildableName = "EthereumWeb3.framework"
-               BlueprintName = "EthereumWeb3"
+               BlueprintName = "EthereumWeb3-iOS"
                ReferencedContainer = "container:EthereumWeb3.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "927C5A99224E4D3400F2AA50"
-               BuildableName = "EthereumWeb3Tests.xctest"
-               BlueprintName = "EthereumWeb3Tests"
+               BuildableName = "EthereumWeb3Tests-iOS.xctest"
+               BlueprintName = "EthereumWeb3Tests-iOS"
                ReferencedContainer = "container:EthereumWeb3.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -44,7 +44,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "927C5A90224E4D3400F2AA50"
             BuildableName = "EthereumWeb3.framework"
-            BlueprintName = "EthereumWeb3"
+            BlueprintName = "EthereumWeb3-iOS"
             ReferencedContainer = "container:EthereumWeb3.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -66,7 +66,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "927C5A90224E4D3400F2AA50"
             BuildableName = "EthereumWeb3.framework"
-            BlueprintName = "EthereumWeb3"
+            BlueprintName = "EthereumWeb3-iOS"
             ReferencedContainer = "container:EthereumWeb3.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -84,7 +84,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "927C5A90224E4D3400F2AA50"
             BuildableName = "EthereumWeb3.framework"
-            BlueprintName = "EthereumWeb3"
+            BlueprintName = "EthereumWeb3-iOS"
             ReferencedContainer = "container:EthereumWeb3.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

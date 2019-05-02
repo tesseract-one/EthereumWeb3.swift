@@ -19,7 +19,7 @@
 //
 
 import Foundation
-import EthereumBase
+import EthereumTypes
 import Web3
 
 
