@@ -24,6 +24,7 @@ Supports eth, net and personal RPC api. Filters handled by polling on client.
 
     ss.dependency 'Tesseract.EthereumTypes', '~> 0.1'
     ss.dependency 'Web3', '~> 0.3.1'
+    ss.dependency 'Web3/ContractABI', '~> 0.3.1'
   end
 
   s.subspec 'PromiseKit' do |ss|
