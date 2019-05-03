@@ -21,6 +21,7 @@
 @_exported import Web3
 import EthereumTypes
 
+typealias Web3Class = Web3
 
 public extension Web3 {
     
@@ -54,22 +55,22 @@ public extension Web3 {
 
 public extension APIRegistry {
     
-    func web3(
+    func Web3(
         rpcUrl: String, chainId: UInt64? = nil,
         session: URLSession = URLSession(configuration: .default)
     ) -> Web3 {
-        return Web3(
+        return Web3Class(
             rpcURL: rpcUrl, sign: signProvider,
             chainId: chainId, handleFilters: true,
             session: session
         )
     }
     
-    func web3(
+    func Web3(
         provider: Web3Provider, chainId: UInt64? = nil,
         rpcIdCounter: AtomicCounter? = nil
     ) -> Web3 {
-        return Web3(
+        return Web3Class(
             provider: provider, sign: signProvider,
             chainId: chainId, rpcIdCounter: rpcIdCounter
         )
