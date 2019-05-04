@@ -53,7 +53,7 @@ public extension Web3 {
     }
 }
 
-public extension APIRegistry {
+public extension ModuleAPIRegistry {
     
     func Web3(
         rpcUrl: String, chainId: UInt64? = nil,
@@ -67,6 +67,30 @@ public extension APIRegistry {
     }
     
     func Web3(
+        provider: Web3Provider, chainId: UInt64? = nil,
+        rpcIdCounter: AtomicCounter? = nil
+    ) -> Web3 {
+        return Web3Class(
+            provider: provider, sign: signProvider,
+            chainId: chainId, rpcIdCounter: rpcIdCounter
+        )
+    }
+}
+
+public extension InstanceAPIRegistry {
+    
+    func web3(
+        rpcUrl: String, chainId: UInt64? = nil,
+        session: URLSession = URLSession(configuration: .default)
+    ) -> Web3 {
+        return Web3Class(
+            rpcURL: rpcUrl, sign: signProvider,
+            chainId: chainId, handleFilters: true,
+            session: session
+        )
+    }
+    
+    func web3(
         provider: Web3Provider, chainId: UInt64? = nil,
         rpcIdCounter: AtomicCounter? = nil
     ) -> Web3 {

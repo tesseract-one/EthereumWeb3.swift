@@ -4,9 +4,7 @@ PODS:
   - PromiseKit/CorePromise (6.8.4)
   - secp256k1.swift (0.1.4)
   - Serializable.swift (0.1.1)
-  - Tesseract.EthereumTypes (0.1.1):
-    - Tesseract.EthereumTypes/Core (= 0.1.1)
-  - Tesseract.EthereumTypes/Core (0.1.1):
+  - Tesseract.EthereumTypes (0.1.5):
     - BigInt (~> 4.0)
     - CryptoSwift (~> 1.0)
     - Serializable.swift (~> 0.1)
@@ -50,7 +48,7 @@ SPEC CHECKSUMS:
   PromiseKit: 51794a832647e7b819336dc2279039ce9f1cc49b
   secp256k1.swift: a7e7a214f6db6ce5db32cc6b2b45e5c4dd633634
   Serializable.swift: 46a21fd252974669c1416edf741db56206fabd8b
-  Tesseract.EthereumTypes: 1b2ee67de19b80c5e934993a0436248cec9e15c5
+  Tesseract.EthereumTypes: 98d0a6341a36ff27874b3445a0ef8d9052f26724
   Web3: dbfb28278f2c87c8de8e7b87a2e24fd038db0926
 
 PODFILE CHECKSUM: 993ad0f4c21965baef5d06cbea341088f35e1d12
