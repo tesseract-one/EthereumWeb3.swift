@@ -1,5 +1,5 @@
 //
-//  Accounts.swift
+//  SignTypedData.swift
 //  EthereumWeb3
 //
 //  Created by Yehor Popovych on 3/29/19.
@@ -19,15 +19,22 @@
 //
 
 import Foundation
-import Web3
+import Ethereum
 
-// eth_accounts
+// eth_signTypedData
 extension EthereumSignProvider {
-    func eth_accounts(id: Int, response: @escaping Web3ResponseCompletion<[EthereumAddress]>) {
+    func eth_signTypedData(
+        request: RPCRequest<SignTypedDataCallParams>,
+        cb: @escaping Completion<EthData>
+    ) {
         networkId { res in
-            res.asyncMap(id: id, response) { networkId, response in
-                self.sign.eth_accounts(networkId: networkId) {
-                    response($0.map{ $0.map{ $0.web3 } }.mapError{$0})
+            res.asyncMap(cb) { networkId, response in
+                self.sign.eth_signTypedData(
+                    account: request.params.account,
+                    data: request.params.data,
+                    networkId: networkId
+                ) {
+                    response($0.map{EthData($0)}.mapError{.signProviderError($0)})
                 }
             }
         }

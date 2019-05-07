@@ -2,55 +2,34 @@ PODS:
   - BigInt (4.0.0)
   - CryptoSwift (1.0.0)
   - PromiseKit/CorePromise (6.8.4)
-  - secp256k1.swift (0.1.4)
-  - Serializable.swift (0.1.1)
-  - Tesseract.EthereumTypes (0.1.5):
+  - Serializable.swift (0.1.2)
+  - Tesseract.EthereumTypes (0.1.6):
     - BigInt (~> 4.0)
     - CryptoSwift (~> 1.0)
     - Serializable.swift (~> 0.1)
-  - Web3 (0.3.1):
-    - Web3/Core (= 0.3.1)
-    - Web3/HTTPExtension (= 0.3.1)
-  - Web3/Core (0.3.1):
-    - BigInt (~> 4.0)
-    - CryptoSwift (~> 1.0)
-    - secp256k1.swift (~> 0.1)
-  - Web3/HTTPExtension (0.3.1):
-    - Web3/Core
 
 DEPENDENCIES:
   - PromiseKit/CorePromise (~> 6.8)
-  - Tesseract.EthereumTypes (~> 0.1)
-  - Web3 (from `https://github.com/tesseract-one/Web3.swift.git`, branch `master`)
+  - Tesseract.EthereumTypes (from `../EthereumTypes.swift`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - BigInt
     - CryptoSwift
     - PromiseKit
-    - secp256k1.swift
     - Serializable.swift
-    - Tesseract.EthereumTypes
 
 EXTERNAL SOURCES:
-  Web3:
-    :branch: master
-    :git: https://github.com/tesseract-one/Web3.swift.git
-
-CHECKOUT OPTIONS:
-  Web3:
-    :commit: 82dde998de4a12ca19cc257cb3b7f860040db705
-    :git: https://github.com/tesseract-one/Web3.swift.git
+  Tesseract.EthereumTypes:
+    :path: "../EthereumTypes.swift"
 
 SPEC CHECKSUMS:
   BigInt: 2aad1a9942dc932ec8b84290d2c564a3d76f97ab
   CryptoSwift: d81eeaa59dc5a8d03720fe919a6fd07b51f7439f
   PromiseKit: 51794a832647e7b819336dc2279039ce9f1cc49b
-  secp256k1.swift: a7e7a214f6db6ce5db32cc6b2b45e5c4dd633634
-  Serializable.swift: 46a21fd252974669c1416edf741db56206fabd8b
-  Tesseract.EthereumTypes: 98d0a6341a36ff27874b3445a0ef8d9052f26724
-  Web3: dbfb28278f2c87c8de8e7b87a2e24fd038db0926
+  Serializable.swift: 30c5cd7c995bc8140afbd0df09b8185d461aa61b
+  Tesseract.EthereumTypes: cef679ade2b8e866cdc6088bac09da870afd4359
 
-PODFILE CHECKSUM: 993ad0f4c21965baef5d06cbea341088f35e1d12
+PODFILE CHECKSUM: f459720e77ef9230c091e4ec0e5a7f71394cc0ba
 
 COCOAPODS: 1.6.1

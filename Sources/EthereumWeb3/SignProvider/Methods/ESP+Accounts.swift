@@ -1,5 +1,5 @@
 //
-//  Response+Web3.swift
+//  Accounts.swift
 //  EthereumWeb3
 //
 //  Created by Yehor Popovych on 3/29/19.
@@ -19,27 +19,16 @@
 //
 
 import Foundation
-import Web3
+import Ethereum
 
-
-extension Web3Response {
-    init(id: Int, result: Swift.Result<Result, Swift.Error>) {
-        switch result {
-        case .failure(let err): self.init(id: id, error: err)
-        case .success(let val): self.init(id: id, value: val)
-        }
-    }
-}
-
-extension Swift.Result {
-    func asyncMap<T: Codable>(id: Int,
-        _ callback: @escaping (Web3Response<T>) -> Void,
-        mapper: @escaping (Success, @escaping (Swift.Result<T, Failure>) -> Void) -> Void) {
-        switch self {
-        case .failure(let err): callback(Web3Response(id: id, error: err))
-        case .success(let val):
-            mapper(val) {
-                callback(Web3Response(id: id, result: $0.mapError{$0}))
+// eth_accounts
+extension EthereumSignProvider {
+    func eth_accounts(id: Int, response: @escaping Completion<[Address]>) {
+        networkId { res in
+            res.asyncMap(response) { networkId, response in
+                self.sign.eth_accounts(networkId: networkId) {
+                    response($0.mapError{.signProviderError($0)})
+                }
             }
         }
     }

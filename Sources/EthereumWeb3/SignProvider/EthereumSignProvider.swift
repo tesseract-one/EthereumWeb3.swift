@@ -19,19 +19,17 @@
 //
 
 import Foundation
-import EthereumTypes
-import Web3
+import Ethereum
 
-
-public class EthereumSignProvider: Web3InjectedProvider {
+public class EthereumSignProvider: InjectedProvider {
     let _web3: Web3
     private var _networkId: UInt64?
     private var _chainId: UInt64?
     
     public let sign: SignProvider
-    public let provider: Web3Provider
+    public let provider: Provider
     
-    init(chainId: UInt64?, counter: AtomicCounter, web3Provider: Web3Provider, signProvider: SignProvider) {
+    init(chainId: UInt64?, counter: AtomicCounter, web3Provider: Provider, signProvider: SignProvider) {
         provider = web3Provider
         sign = signProvider
         _networkId = nil
@@ -40,7 +38,7 @@ public class EthereumSignProvider: Web3InjectedProvider {
         networkId({ _ in }) // Prefetch network and chain id
     }
     
-    public func chainId(_ cb: @escaping (Swift.Result<UInt64, Error>) -> Void) {
+    public func chainId(_ cb: @escaping (Swift.Result<UInt64, ProviderError>) -> Void) {
         if let chainId = _chainId {
             cb(.success(chainId))
             return
@@ -48,28 +46,28 @@ public class EthereumSignProvider: Web3InjectedProvider {
         networkId(cb)
     }
     
-    public func networkId(_ cb: @escaping (Swift.Result<UInt64, Error>) -> Void) {
+    public func networkId(_ cb: @escaping (Swift.Result<UInt64, ProviderError>) -> Void) {
         if let networkId = _networkId {
             cb(.success(networkId))
             return
         }
         _web3.net.version() { result in
-            switch result.status {
-            case .success(let ver):
-                guard let id = UInt64(ver, radix: 10) else {
-                    cb(.failure(SignProviderError.nonIntNetworkVersion(ver)))
-                    return
+            cb(
+                result.tryMap { ver in
+                    guard let id = UInt64(ver, radix: 10) else {
+                        throw SignProviderError.nonIntNetworkVersion(ver)
+                    }
+                    self._networkId = id
+                    self._chainId = self._chainId ?? id
+                    return id
                 }
-                self._networkId = id
-                self._chainId = self._chainId ?? id
-                cb(.success(id))
-            case .failure(let err): cb(.failure(err))
-            }
+                .mapError{.requestFailed($0)}
+            )
         }
     }
     
     public func networkAndChainId(
-        _ cb: @escaping (Swift.Result<(nId: UInt64, cId: UInt64), Error>) -> Void
+        _ cb: @escaping (Swift.Result<(nId: UInt64, cId: UInt64), ProviderError>) -> Void
     ) {
         networkId { res in
             switch res {
@@ -80,21 +78,21 @@ public class EthereumSignProvider: Web3InjectedProvider {
         }
     }
     
-    public func send<Params, Result>(request: RPCRequest<Params>, response: @escaping Web3ResponseCompletion<Result>) {
+    public func send<Params, Result>(request: RPCRequest<Params>, response: @escaping Completion<Result>) {
         switch request.method {
         case "eth_accounts":
-            eth_accounts(id: request.id) { response($0 as! Web3Response<Result>) }
+            eth_accounts(id: request.id) { response($0 as! Response<Result>) }
         case "personal_sign":
-            personal_sign(req: request as! RPCRequest<EthereumValue>) { response($0 as! Web3Response<Result>) }
+            personal_sign(req: request as! RPCRequest<Value>) { response($0 as! Response<Result>) }
         case "eth_sign":
-            eth_sign(req: request as! RPCRequest<EthereumValue>) { response($0 as! Web3Response<Result>) }
+            eth_sign(req: request as! RPCRequest<Value>) { response($0 as! Response<Result>) }
         case "eth_sendTransaction":
-            eth_sendTransaction(request: request as! RPCRequest<[EthereumTransaction]>) {
-                response($0 as! Web3Response<Result>)
+            eth_sendTransaction(request: request as! RPCRequest<[Transaction]>) {
+                response($0 as! Response<Result>)
             }
         case "eth_signTypedData", "personal_signTypedData":
-            eth_signTypedData(request: request as! RPCRequest<EthereumSignTypedDataCallParams>) {
-                response($0 as! Web3Response<Result>)
+            eth_signTypedData(request: request as! RPCRequest<SignTypedDataCallParams>) {
+                response($0 as! Response<Result>)
             }
         default:
             provider.send(request: request, response: response)
