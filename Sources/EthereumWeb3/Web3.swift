@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Ethereum
+@_exported import Ethereum
 
 public struct Web3 {
 
