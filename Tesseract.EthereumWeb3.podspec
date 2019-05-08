@@ -27,7 +27,9 @@ Supports eth, net and personal RPC api. Filters handled by polling on client.
 
   s.subspec 'PromiseKit' do |ss|
     ss.source_files = 'Sources/PromiseKit/**/*.swift'
+
     ss.dependency 'Tesseract.EthereumWeb3/Core'
+    ss.dependency 'PromiseKit/CorePromise', '~> 6.8'
   end
 
   s.default_subspecs = 'Core'
