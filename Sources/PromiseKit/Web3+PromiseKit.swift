@@ -19,6 +19,7 @@ public extension Web3 {
     }
 }
 
+
 public extension Web3.Net {
 
     func version() -> Promise<String> {
@@ -33,6 +34,7 @@ public extension Web3.Net {
         }
     }
 }
+
 
 public extension Web3.Eth {
 
@@ -141,6 +143,20 @@ public extension Web3.Eth {
             self.sendTransaction(transaction: transaction, response: seal.resolve)
         }
     }
+    
+    func sign(account: Address, message: EthData) -> Promise<EthData> {
+        return Promise { seal in
+            self.sign(account: account, message: message, response: seal.resolve)
+        }
+    }
+    
+    func signTypedData(
+        account: Address, data: TypedData
+    ) -> Promise<EthData> {
+        return Promise { seal in
+            self.signTypedData(account: account, data: data, response: seal.resolve)
+        }
+    }
 
     func call(call: Call, block: QuantityTag = .latest) -> Promise<EthData> {
         return Promise { seal in
@@ -216,5 +232,139 @@ public extension Web3.Eth {
             self.getUncleByBlockNumberAndIndex(block: block, uncleIndex: uncleIndex, response: seal.resolve)
         }
     }
+    
+    func newFilter(
+        fromBlock: QuantityTag? = nil,
+        toBlock: QuantityTag? = nil,
+        address: Address? = nil,
+        topics: [Topic]? = nil
+    ) -> Promise<Quantity> {
+        return Promise { seal in
+            self.newFilter(
+                fromBlock: fromBlock, toBlock: toBlock,
+                address: address, topics: topics,
+                response: seal.resolve
+            )
+        }
+    }
+    
+    func newBlockFilter() -> Promise<Quantity> {
+        return Promise { seal in
+            self.newBlockFilter(response: seal.resolve)
+        }
+    }
+    
+    func newPendingTransactionFilter() -> Promise<Quantity> {
+        return Promise { seal in
+            self.newPendingTransactionFilter(response: seal.resolve)
+        }
+    }
+    
+    func uninstallFilter(id: Quantity) -> Promise<Bool> {
+        return Promise { seal in
+            self.uninstallFilter(id: id, response: seal.resolve)
+        }
+    }
+    
+    func getFilterChanges(id: Quantity) -> Promise<FilterChangesObject> {
+        return Promise { seal in
+            self.getFilterChanges(id: id, response: seal.resolve)
+        }
+    }
+
+    
+    func getFilterLogs(id: Quantity) -> Promise<[LogObject]> {
+        return Promise { seal in
+            self.getFilterLogs(id: id, response: seal.resolve)
+        }
+    }
+    
+    func getLogs(
+        fromBlock: QuantityTag? = nil,
+        toBlock: QuantityTag? = nil,
+        address: Address? = nil,
+        topics: [Topic]? = nil,
+        blockhash: EthData? = nil
+    ) -> Promise<[LogObject]> {
+        return Promise { seal in
+            self.getLogs(
+                fromBlock: fromBlock, toBlock: toBlock, address: address,
+                topics: topics, blockhash: blockhash, response: seal.resolve
+            )
+        }
+    }
 }
 
+
+public extension Web3.Personal {
+    
+    func importRawKey(privateKey: EthData, password: String) -> Promise<Address> {
+        return Promise { seal in
+            self.importRawKey(privateKey: privateKey, password: password, response: seal.resolve)
+        }
+    }
+    
+    func listAccounts() -> Promise<[Address]> {
+        return Promise { seal in
+            self.listAccounts(response: seal.resolve)
+        }
+    }
+    
+    func newAccount(password: String) -> Promise<Address> {
+        return Promise { seal in
+            self.newAccount(password: password, response: seal.resolve)
+        }
+    }
+    
+    func lockAccount(account: Address) -> Promise<Bool> {
+        return Promise { seal in
+            self.lockAccount(account: account, response: seal.resolve)
+        }
+    }
+    
+    func unlockAccount(
+        account: Address,
+        password: String,
+        duration: Int? = nil
+    ) -> Promise<Bool> {
+        return Promise { seal in
+            self.unlockAccount(
+                account: account, password: password,
+                duration: duration, response: seal.resolve
+            )
+        }
+    }
+    
+    func sendTransaction(transaction: Transaction, password: String) -> Promise<EthData> {
+        return Promise { seal in
+            self.sendTransaction(
+                transaction: transaction, password: password,
+                response: seal.resolve
+            )
+        }
+    }
+    
+    func sign(message: EthData, account: Address, password: String) -> Promise<EthData> {
+        return Promise { seal in
+            self.sign(
+                message: message, account: account,
+                password: password, response: seal.resolve
+            )
+        }
+    }
+    
+    func signTypedData(account: Address, data: TypedData, password: String) -> Promise<EthData> {
+        return Promise { seal in
+            self.signTypedData(
+                account: account, data: data,
+                password: password, response: seal.resolve
+            )
+        }
+    }
+    
+    func ecRecover(message: EthData, signature: EthData) -> Promise<Address> {
+        return Promise { seal in
+            self.ecRecover(message: message, signature: signature, response: seal.resolve)
+        }
+    }
+}
