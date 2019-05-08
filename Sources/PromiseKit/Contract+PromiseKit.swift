@@ -19,7 +19,7 @@ public extension SolidityInvocation {
         }
     }
 
-    func send(nonce: Quantity? = nil, from: Address, value: Quantity = nil, gas: Quantity? = nil, gasPrice: Quantity? = nil) -> Promise<EthData> {
+    func send(nonce: Quantity? = nil, from: Address, value: Quantity? = nil, gas: Quantity? = nil, gasPrice: Quantity? = nil) -> Promise<EthData> {
         return Promise{ seal in
             self.send(nonce: nonce, from: from, value: value, gas: gas, gasPrice: gasPrice, completion: seal.resolve)
         }
@@ -36,7 +36,7 @@ public extension SolidityConstructorInvocation {
 
     func send(nonce: Quantity? = nil, from: Address, value: Quantity? = nil, gas: Quantity? = nil, gasPrice: Quantity? = nil) -> Promise<EthData> {
         return Promise { seal in
-            self.send(nonce: nonce, from: from, value: value, gas: gas, gasPrice: gasPrice, completion: seal.resolve)
+            self.send(nonce: nonce, from: from, value: value ?? 0, gas: gas, gasPrice: gasPrice, completion: seal.resolve)
         }
     }
 }
