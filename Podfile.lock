@@ -10,7 +10,7 @@ PODS:
 
 DEPENDENCIES:
   - PromiseKit/CorePromise (~> 6.8)
-  - Tesseract.EthereumTypes (from `../EthereumTypes.swift`)
+  - Tesseract.EthereumTypes (~> 0.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -18,10 +18,7 @@ SPEC REPOS:
     - CryptoSwift
     - PromiseKit
     - Serializable.swift
-
-EXTERNAL SOURCES:
-  Tesseract.EthereumTypes:
-    :path: "../EthereumTypes.swift"
+    - Tesseract.EthereumTypes
 
 SPEC CHECKSUMS:
   BigInt: 2aad1a9942dc932ec8b84290d2c564a3d76f97ab
@@ -30,6 +27,6 @@ SPEC CHECKSUMS:
   Serializable.swift: 30c5cd7c995bc8140afbd0df09b8185d461aa61b
   Tesseract.EthereumTypes: cef679ade2b8e866cdc6088bac09da870afd4359
 
-PODFILE CHECKSUM: f459720e77ef9230c091e4ec0e5a7f71394cc0ba
+PODFILE CHECKSUM: f08eb31d48cd279ba1023653b151750dd986a110
 
 COCOAPODS: 1.6.1
