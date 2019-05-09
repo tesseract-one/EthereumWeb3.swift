@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "92C64ADB2284774D00F547C3"
+               BuildableName = "EthereumWeb3Tests-macOS.xctest"
+               BlueprintName = "EthereumWeb3Tests-macOS"
+               ReferencedContainer = "container:EthereumWeb3.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "92C64AD32284774D00F547C3"
+            BuildableName = "EthereumWeb3.framework"
+            BlueprintName = "EthereumWeb3-macOS"
+            ReferencedContainer = "container:EthereumWeb3.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
