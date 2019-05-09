@@ -35,13 +35,13 @@ matrix:
         - kill %1
 
     - os: linux
-     # Ubuntu 14.04
-     dist: trusty
-     # Generic language as travis doesn't know anything about SPM and Linux
-     language: generic
-     before_install:
-       - eval "$(curl -sL https://swiftenv.fuller.li/install.sh)"
-     script:
-       - swift build
-       - swift build -c release
-       - swift test
+      # Ubuntu 14.04
+      dist: trusty
+      # Generic language as travis doesn't know anything about SPM and Linux
+      language: generic
+      before_install:
+        - eval "$(curl -sL https://swiftenv.fuller.li/install.sh)"
+      script:
+        - swift build
+        - swift build -c release
+        - swift test
