@@ -9,6 +9,9 @@
 import Foundation
 import PromiseKit
 import Ethereum
+#if !COCOAPODS
+    import EthereumWeb3
+#endif
 
 public extension Web3 {
 

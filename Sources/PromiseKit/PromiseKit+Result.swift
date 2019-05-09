@@ -8,6 +8,9 @@
 
 import Foundation
 import PromiseKit
+#if !COCOAPODS
+    import EthereumWeb3
+#endif
 
 extension Resolver {
     func resolve(_ result: Swift.Result<T, Error>) {

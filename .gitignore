@@ -27,3 +27,7 @@ Pods/
 
 # Carthage
 Carthage/
+
+# PM
+.build
+Package.resolved

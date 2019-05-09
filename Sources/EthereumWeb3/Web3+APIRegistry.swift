@@ -18,6 +18,7 @@
 //  limitations under the License.
 //
 
+import Foundation
 import Ethereum
 
 typealias Web3Class = Web3

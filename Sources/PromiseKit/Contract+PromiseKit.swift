@@ -8,6 +8,9 @@
 
 import PromiseKit
 import Ethereum
+#if !COCOAPODS
+    import EthereumWeb3
+#endif
 
 // MARK: - Extensions
 
