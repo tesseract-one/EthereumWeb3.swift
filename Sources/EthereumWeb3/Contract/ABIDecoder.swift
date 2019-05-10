@@ -133,9 +133,9 @@ class ABIDecoder {
             case .bytes(let length):
                 var data: Data?
                 if let length = length {
-                    data = Data(hexString: hexString, length: length)
+                    data = Data(ethAbiHexString: hexString, length: length)
                 } else {
-                    data = Data(hexString: hexString)
+                    data = Data(ethAbiHexString: hexString)
                 }
                 guard let decoded = data else {
                     throw Error.couldNotDecodeType(type: type, string: hexString)
@@ -149,7 +149,7 @@ class ABIDecoder {
                 throw Error.typeNotSupported(type: type)
             default:
                 if let nativeType = valueType.nativeType {
-                    if let decodedValue = nativeType.init(hexString: hexString) {
+                    if let decodedValue = nativeType.init(ethAbiHexString: hexString) {
                         return decodedValue
                     }
                     throw Error.couldNotDecodeType(type: type, string: hexString)
