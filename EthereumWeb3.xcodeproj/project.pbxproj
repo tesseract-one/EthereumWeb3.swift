@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		927C5A9B224E4D3400F2AA50 /* EthereumWeb3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927C5A91224E4D3400F2AA50 /* EthereumWeb3.framework */; };
-		927C5AA0224E4D3400F2AA50 /* EthereumWeb3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C5A9F224E4D3400F2AA50 /* EthereumWeb3Tests.swift */; };
 		927C5AB5224E52F700F2AA50 /* EthereumSignProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C5AB2224E52F700F2AA50 /* EthereumSignProvider.swift */; };
 		927C5AB9224E6B6D00F2AA50 /* ESP+Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C5AB8224E6B6D00F2AA50 /* ESP+Accounts.swift */; };
 		927C5ABB224E6BA700F2AA50 /* ESP+SignData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C5ABA224E6BA700F2AA50 /* ESP+SignData.swift */; };
@@ -71,14 +70,12 @@
 		92C64A962284699500F547C3 /* Ethereum.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 92C64A8B2284696C00F547C3 /* Ethereum.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		92C64A972284699500F547C3 /* Serializable.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 92C64A892284696C00F547C3 /* Serializable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		92C64AB32284761D00F547C3 /* EthereumWeb3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C64AAA2284761D00F547C3 /* EthereumWeb3.framework */; };
-		92C64AC1228476CD00F547C3 /* EthereumWeb3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C5A9F224E4D3400F2AA50 /* EthereumWeb3Tests.swift */; };
 		92C64ADD2284774D00F547C3 /* EthereumWeb3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C64AD42284774D00F547C3 /* EthereumWeb3.framework */; };
 		92C64B15228478F600F547C3 /* EthereumWeb3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C64AAA2284761D00F547C3 /* EthereumWeb3.framework */; };
 		92C64B182284797F00F547C3 /* PKEthereumWeb3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C64AC7228476E600F547C3 /* PKEthereumWeb3.framework */; };
 		92C64B1B228479AC00F547C3 /* EthereumWeb3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C64AD42284774D00F547C3 /* EthereumWeb3.framework */; };
 		92C64B1E228479C800F547C3 /* PKEthereumWeb3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C64AF02284780400F547C3 /* PKEthereumWeb3.framework */; };
 		92C64B21228479E200F547C3 /* EthereumWeb3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C64AFD2284785000F547C3 /* EthereumWeb3.framework */; };
-		92C64B2222847A2000F547C3 /* EthereumWeb3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C5A9F224E4D3400F2AA50 /* EthereumWeb3Tests.swift */; };
 		92C64B2322847A2F00F547C3 /* Exports+PromiseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C64A4822820DF700F547C3 /* Exports+PromiseKit.swift */; };
 		92C64B2422847A2F00F547C3 /* Contract+PromiseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C649F8228205DD00F547C3 /* Contract+PromiseKit.swift */; };
 		92C64B2522847A2F00F547C3 /* Web3+PromiseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C64A4622820DF700F547C3 /* Web3+PromiseKit.swift */; };
@@ -251,6 +248,9 @@
 		92C64BDF22847BBE00F547C3 /* BigInt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C64BDB22847BBE00F547C3 /* BigInt.framework */; };
 		92C64BE022847BBE00F547C3 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C64BDC22847BBE00F547C3 /* CryptoSwift.framework */; };
 		92C64BE222847BD700F547C3 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C64BE122847BD600F547C3 /* PromiseKit.framework */; };
+		D1D46856228B035600A2BD77 /* ABITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D46855228B035600A2BD77 /* ABITests.swift */; };
+		D1D46857228B035600A2BD77 /* ABITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D46855228B035600A2BD77 /* ABITests.swift */; };
+		D1D46858228B035600A2BD77 /* ABITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D46855228B035600A2BD77 /* ABITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -378,7 +378,6 @@
 		927C5A91224E4D3400F2AA50 /* EthereumWeb3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EthereumWeb3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		927C5A95224E4D3400F2AA50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		927C5A9A224E4D3400F2AA50 /* EthereumWeb3Tests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EthereumWeb3Tests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		927C5A9F224E4D3400F2AA50 /* EthereumWeb3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumWeb3Tests.swift; sourceTree = "<group>"; };
 		927C5AA1224E4D3400F2AA50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		927C5AB2224E52F700F2AA50 /* EthereumSignProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumSignProvider.swift; sourceTree = "<group>"; };
 		927C5AB8224E6B6D00F2AA50 /* ESP+Accounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ESP+Accounts.swift"; sourceTree = "<group>"; };
@@ -461,6 +460,7 @@
 		92C64BDB22847BBE00F547C3 /* BigInt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BigInt.framework; sourceTree = "<group>"; };
 		92C64BDC22847BBE00F547C3 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CryptoSwift.framework; sourceTree = "<group>"; };
 		92C64BE122847BD600F547C3 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PromiseKit.framework; sourceTree = "<group>"; };
+		D1D46855228B035600A2BD77 /* ABITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -622,7 +622,7 @@
 		927C5A9E224E4D3400F2AA50 /* EthereumWeb3Tests */ = {
 			isa = PBXGroup;
 			children = (
-				927C5A9F224E4D3400F2AA50 /* EthereumWeb3Tests.swift */,
+				D1D46854228B034600A2BD77 /* ABITests */,
 				927C5AA1224E4D3400F2AA50 /* Info.plist */,
 			);
 			path = EthereumWeb3Tests;
@@ -812,6 +812,14 @@
 				92C64A872284693900F547C3 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1D46854228B034600A2BD77 /* ABITests */ = {
+			isa = PBXGroup;
+			children = (
+				D1D46855228B035600A2BD77 /* ABITests.swift */,
+			);
+			path = ABITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1294,7 +1302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				927C5AA0224E4D3400F2AA50 /* EthereumWeb3Tests.swift in Sources */,
+				D1D46856228B035600A2BD77 /* ABITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1365,7 +1373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92C64AC1228476CD00F547C3 /* EthereumWeb3Tests.swift in Sources */,
+				D1D46857228B035600A2BD77 /* ABITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1436,7 +1444,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92C64B2222847A2000F547C3 /* EthereumWeb3Tests.swift in Sources */,
+				D1D46858228B035600A2BD77 /* ABITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
