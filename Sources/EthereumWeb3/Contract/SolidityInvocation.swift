@@ -111,7 +111,7 @@ public struct SolidityPayableInvocation: SolidityInvocation {
     public func createTransaction(nonce: Quantity? = nil, from: Address, value: Quantity?, gas: Quantity?, gasPrice: Quantity?) -> Transaction? {
         guard let data = encodeABI() else { return nil }
         guard let to = handler.address else { return nil }
-        return Transaction(nonce: nonce, gasPrice: gasPrice, gas: gas, from: from, to: to, value: value ?? 0, data: data)
+        return try? Transaction(nonce: nonce, gasPrice: gasPrice, gas: gas, from: from, to: to, value: value ?? 0, data: data)
     }
     
     public func createCall() -> Call? {
@@ -153,7 +153,7 @@ public struct SolidityNonPayableInvocation: SolidityInvocation {
     public func createTransaction(nonce: Quantity? = nil, from: Address, value: Quantity?, gas: Quantity?, gasPrice: Quantity?) -> Transaction? {
         guard let data = encodeABI() else { return nil }
         guard let to = handler.address else { return nil }
-        return Transaction(nonce: nonce, gasPrice: gasPrice, gas: gas, from: from, to: to, value: value ?? 0, data: data)
+        return try? Transaction(nonce: nonce, gasPrice: gasPrice, gas: gas, from: from, to: to, value: value ?? 0, data: data)
     }
     
     public func createCall() -> Call? {
@@ -226,7 +226,7 @@ public struct SolidityConstructorInvocation {
     
     public func createTransaction(nonce: Quantity? = nil, from: Address, value: Quantity = 0, gas: Quantity?, gasPrice: Quantity?) -> Transaction? {
         guard let data = encodeABI() else { return nil }
-        return Transaction(nonce: nonce, gasPrice: gasPrice, gas: gas, from: from, to: nil, value: value, data: data)
+        return try? Transaction(nonce: nonce, gasPrice: gasPrice, gas: gas, from: from, to: nil, value: value, data: data)
     }
     
     public func send(nonce: Quantity? = nil, from: Address, value: Quantity = 0, gas: Quantity? = nil, gasPrice: Quantity? = nil, completion: @escaping (Swift.Result<EthData, Error>) -> Void) {
