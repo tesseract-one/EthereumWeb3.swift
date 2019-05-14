@@ -251,6 +251,9 @@
 		D1D46856228B035600A2BD77 /* ABITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D46855228B035600A2BD77 /* ABITests.swift */; };
 		D1D46857228B035600A2BD77 /* ABITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D46855228B035600A2BD77 /* ABITests.swift */; };
 		D1D46858228B035600A2BD77 /* ABITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D46855228B035600A2BD77 /* ABITests.swift */; };
+		D1D4685B228B2BF400A2BD77 /* BlockObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D4685A228B2BF400A2BD77 /* BlockObjectTests.swift */; };
+		D1D4685C228B2BF400A2BD77 /* BlockObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D4685A228B2BF400A2BD77 /* BlockObjectTests.swift */; };
+		D1D4685D228B2BF400A2BD77 /* BlockObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D4685A228B2BF400A2BD77 /* BlockObjectTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -461,6 +464,7 @@
 		92C64BDC22847BBE00F547C3 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CryptoSwift.framework; sourceTree = "<group>"; };
 		92C64BE122847BD600F547C3 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PromiseKit.framework; sourceTree = "<group>"; };
 		D1D46855228B035600A2BD77 /* ABITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABITests.swift; sourceTree = "<group>"; };
+		D1D4685A228B2BF400A2BD77 /* BlockObjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockObjectTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -622,6 +626,7 @@
 		927C5A9E224E4D3400F2AA50 /* EthereumWeb3Tests */ = {
 			isa = PBXGroup;
 			children = (
+				D1D46859228B2BC500A2BD77 /* JsonTests */,
 				D1D46854228B034600A2BD77 /* ABITests */,
 				927C5AA1224E4D3400F2AA50 /* Info.plist */,
 			);
@@ -820,6 +825,14 @@
 				D1D46855228B035600A2BD77 /* ABITests.swift */,
 			);
 			path = ABITests;
+			sourceTree = "<group>";
+		};
+		D1D46859228B2BC500A2BD77 /* JsonTests */ = {
+			isa = PBXGroup;
+			children = (
+				D1D4685A228B2BF400A2BD77 /* BlockObjectTests.swift */,
+			);
+			path = JsonTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1302,6 +1315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1D4685B228B2BF400A2BD77 /* BlockObjectTests.swift in Sources */,
 				D1D46856228B035600A2BD77 /* ABITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1373,6 +1387,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1D4685C228B2BF400A2BD77 /* BlockObjectTests.swift in Sources */,
 				D1D46857228B035600A2BD77 /* ABITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1444,6 +1459,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1D4685D228B2BF400A2BD77 /* BlockObjectTests.swift in Sources */,
 				D1D46858228B035600A2BD77 /* ABITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
