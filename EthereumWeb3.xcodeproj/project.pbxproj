@@ -254,6 +254,9 @@
 		D1D4685B228B2BF400A2BD77 /* BlockObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D4685A228B2BF400A2BD77 /* BlockObjectTests.swift */; };
 		D1D4685C228B2BF400A2BD77 /* BlockObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D4685A228B2BF400A2BD77 /* BlockObjectTests.swift */; };
 		D1D4685D228B2BF400A2BD77 /* BlockObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D4685A228B2BF400A2BD77 /* BlockObjectTests.swift */; };
+		D1D4685F228B38FF00A2BD77 /* CallParamsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D4685E228B38FF00A2BD77 /* CallParamsTests.swift */; };
+		D1D46860228B38FF00A2BD77 /* CallParamsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D4685E228B38FF00A2BD77 /* CallParamsTests.swift */; };
+		D1D46861228B38FF00A2BD77 /* CallParamsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D4685E228B38FF00A2BD77 /* CallParamsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -465,6 +468,7 @@
 		92C64BE122847BD600F547C3 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PromiseKit.framework; sourceTree = "<group>"; };
 		D1D46855228B035600A2BD77 /* ABITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABITests.swift; sourceTree = "<group>"; };
 		D1D4685A228B2BF400A2BD77 /* BlockObjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockObjectTests.swift; sourceTree = "<group>"; };
+		D1D4685E228B38FF00A2BD77 /* CallParamsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallParamsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -831,6 +835,7 @@
 			isa = PBXGroup;
 			children = (
 				D1D4685A228B2BF400A2BD77 /* BlockObjectTests.swift */,
+				D1D4685E228B38FF00A2BD77 /* CallParamsTests.swift */,
 			);
 			path = JsonTests;
 			sourceTree = "<group>";
@@ -1316,6 +1321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1D4685B228B2BF400A2BD77 /* BlockObjectTests.swift in Sources */,
+				D1D4685F228B38FF00A2BD77 /* CallParamsTests.swift in Sources */,
 				D1D46856228B035600A2BD77 /* ABITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1388,6 +1394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1D4685C228B2BF400A2BD77 /* BlockObjectTests.swift in Sources */,
+				D1D46860228B38FF00A2BD77 /* CallParamsTests.swift in Sources */,
 				D1D46857228B035600A2BD77 /* ABITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1460,6 +1467,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1D4685D228B2BF400A2BD77 /* BlockObjectTests.swift in Sources */,
+				D1D46861228B38FF00A2BD77 /* CallParamsTests.swift in Sources */,
 				D1D46858228B035600A2BD77 /* ABITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
