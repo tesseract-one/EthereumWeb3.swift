@@ -257,6 +257,9 @@
 		D1D4685F228B38FF00A2BD77 /* CallParamsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D4685E228B38FF00A2BD77 /* CallParamsTests.swift */; };
 		D1D46860228B38FF00A2BD77 /* CallParamsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D4685E228B38FF00A2BD77 /* CallParamsTests.swift */; };
 		D1D46861228B38FF00A2BD77 /* CallParamsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D4685E228B38FF00A2BD77 /* CallParamsTests.swift */; };
+		D1D46863228B47B000A2BD77 /* QuantityTagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D46862228B47B000A2BD77 /* QuantityTagTests.swift */; };
+		D1D46864228B47B000A2BD77 /* QuantityTagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D46862228B47B000A2BD77 /* QuantityTagTests.swift */; };
+		D1D46865228B47B000A2BD77 /* QuantityTagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D46862228B47B000A2BD77 /* QuantityTagTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -469,6 +472,7 @@
 		D1D46855228B035600A2BD77 /* ABITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABITests.swift; sourceTree = "<group>"; };
 		D1D4685A228B2BF400A2BD77 /* BlockObjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockObjectTests.swift; sourceTree = "<group>"; };
 		D1D4685E228B38FF00A2BD77 /* CallParamsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallParamsTests.swift; sourceTree = "<group>"; };
+		D1D46862228B47B000A2BD77 /* QuantityTagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantityTagTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -836,6 +840,7 @@
 			children = (
 				D1D4685A228B2BF400A2BD77 /* BlockObjectTests.swift */,
 				D1D4685E228B38FF00A2BD77 /* CallParamsTests.swift */,
+				D1D46862228B47B000A2BD77 /* QuantityTagTests.swift */,
 			);
 			path = JsonTests;
 			sourceTree = "<group>";
@@ -1323,6 +1328,7 @@
 				D1D4685B228B2BF400A2BD77 /* BlockObjectTests.swift in Sources */,
 				D1D4685F228B38FF00A2BD77 /* CallParamsTests.swift in Sources */,
 				D1D46856228B035600A2BD77 /* ABITests.swift in Sources */,
+				D1D46863228B47B000A2BD77 /* QuantityTagTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1396,6 +1402,7 @@
 				D1D4685C228B2BF400A2BD77 /* BlockObjectTests.swift in Sources */,
 				D1D46860228B38FF00A2BD77 /* CallParamsTests.swift in Sources */,
 				D1D46857228B035600A2BD77 /* ABITests.swift in Sources */,
+				D1D46864228B47B000A2BD77 /* QuantityTagTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1469,6 +1476,7 @@
 				D1D4685D228B2BF400A2BD77 /* BlockObjectTests.swift in Sources */,
 				D1D46861228B38FF00A2BD77 /* CallParamsTests.swift in Sources */,
 				D1D46858228B035600A2BD77 /* ABITests.swift in Sources */,
+				D1D46865228B47B000A2BD77 /* QuantityTagTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
