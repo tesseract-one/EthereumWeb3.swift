@@ -263,6 +263,9 @@
 		D1D46867228B4EEE00A2BD77 /* SyncStatusObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D46866228B4EEE00A2BD77 /* SyncStatusObjectTests.swift */; };
 		D1D46868228B4EEE00A2BD77 /* SyncStatusObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D46866228B4EEE00A2BD77 /* SyncStatusObjectTests.swift */; };
 		D1D46869228B4EEE00A2BD77 /* SyncStatusObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D46866228B4EEE00A2BD77 /* SyncStatusObjectTests.swift */; };
+		D1D4686B228C2A2200A2BD77 /* RPCRequestJsonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D4686A228C2A2200A2BD77 /* RPCRequestJsonTests.swift */; };
+		D1D4686C228C2A2200A2BD77 /* RPCRequestJsonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D4686A228C2A2200A2BD77 /* RPCRequestJsonTests.swift */; };
+		D1D4686D228C2A2200A2BD77 /* RPCRequestJsonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D4686A228C2A2200A2BD77 /* RPCRequestJsonTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -477,6 +480,7 @@
 		D1D4685E228B38FF00A2BD77 /* CallParamsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallParamsTests.swift; sourceTree = "<group>"; };
 		D1D46862228B47B000A2BD77 /* QuantityTagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantityTagTests.swift; sourceTree = "<group>"; };
 		D1D46866228B4EEE00A2BD77 /* SyncStatusObjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncStatusObjectTests.swift; sourceTree = "<group>"; };
+		D1D4686A228C2A2200A2BD77 /* RPCRequestJsonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPCRequestJsonTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -846,6 +850,7 @@
 				D1D4685E228B38FF00A2BD77 /* CallParamsTests.swift */,
 				D1D46862228B47B000A2BD77 /* QuantityTagTests.swift */,
 				D1D46866228B4EEE00A2BD77 /* SyncStatusObjectTests.swift */,
+				D1D4686A228C2A2200A2BD77 /* RPCRequestJsonTests.swift */,
 			);
 			path = JsonTests;
 			sourceTree = "<group>";
@@ -1335,6 +1340,7 @@
 				D1D4685F228B38FF00A2BD77 /* CallParamsTests.swift in Sources */,
 				D1D46856228B035600A2BD77 /* ABITests.swift in Sources */,
 				D1D46863228B47B000A2BD77 /* QuantityTagTests.swift in Sources */,
+				D1D4686B228C2A2200A2BD77 /* RPCRequestJsonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1410,6 +1416,7 @@
 				D1D46860228B38FF00A2BD77 /* CallParamsTests.swift in Sources */,
 				D1D46857228B035600A2BD77 /* ABITests.swift in Sources */,
 				D1D46864228B47B000A2BD77 /* QuantityTagTests.swift in Sources */,
+				D1D4686C228C2A2200A2BD77 /* RPCRequestJsonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1485,6 +1492,7 @@
 				D1D46861228B38FF00A2BD77 /* CallParamsTests.swift in Sources */,
 				D1D46858228B035600A2BD77 /* ABITests.swift in Sources */,
 				D1D46865228B47B000A2BD77 /* QuantityTagTests.swift in Sources */,
+				D1D4686D228C2A2200A2BD77 /* RPCRequestJsonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
