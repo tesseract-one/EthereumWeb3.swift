@@ -266,6 +266,12 @@
 		D1D4686B228C2A2200A2BD77 /* RPCRequestJsonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D4686A228C2A2200A2BD77 /* RPCRequestJsonTests.swift */; };
 		D1D4686C228C2A2200A2BD77 /* RPCRequestJsonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D4686A228C2A2200A2BD77 /* RPCRequestJsonTests.swift */; };
 		D1D4686D228C2A2200A2BD77 /* RPCRequestJsonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D4686A228C2A2200A2BD77 /* RPCRequestJsonTests.swift */; };
+		D1D4686F228C2DB800A2BD77 /* Web3HttpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D4686E228C2DB800A2BD77 /* Web3HttpTests.swift */; };
+		D1D46870228C2DB800A2BD77 /* Web3HttpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D4686E228C2DB800A2BD77 /* Web3HttpTests.swift */; };
+		D1D46871228C2DB800A2BD77 /* Web3HttpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D4686E228C2DB800A2BD77 /* Web3HttpTests.swift */; };
+		D1D46874228C642200A2BD77 /* MockProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D46873228C642200A2BD77 /* MockProvider.swift */; };
+		D1D46875228C642200A2BD77 /* MockProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D46873228C642200A2BD77 /* MockProvider.swift */; };
+		D1D46876228C642200A2BD77 /* MockProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D46873228C642200A2BD77 /* MockProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -481,6 +487,8 @@
 		D1D46862228B47B000A2BD77 /* QuantityTagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantityTagTests.swift; sourceTree = "<group>"; };
 		D1D46866228B4EEE00A2BD77 /* SyncStatusObjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncStatusObjectTests.swift; sourceTree = "<group>"; };
 		D1D4686A228C2A2200A2BD77 /* RPCRequestJsonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPCRequestJsonTests.swift; sourceTree = "<group>"; };
+		D1D4686E228C2DB800A2BD77 /* Web3HttpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web3HttpTests.swift; sourceTree = "<group>"; };
+		D1D46873228C642200A2BD77 /* MockProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -642,6 +650,7 @@
 		927C5A9E224E4D3400F2AA50 /* EthereumWeb3Tests */ = {
 			isa = PBXGroup;
 			children = (
+				D1D46872228C2DC600A2BD77 /* Web3Tests */,
 				D1D46859228B2BC500A2BD77 /* JsonTests */,
 				D1D46854228B034600A2BD77 /* ABITests */,
 				927C5AA1224E4D3400F2AA50 /* Info.plist */,
@@ -853,6 +862,15 @@
 				D1D4686A228C2A2200A2BD77 /* RPCRequestJsonTests.swift */,
 			);
 			path = JsonTests;
+			sourceTree = "<group>";
+		};
+		D1D46872228C2DC600A2BD77 /* Web3Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D1D4686E228C2DB800A2BD77 /* Web3HttpTests.swift */,
+				D1D46873228C642200A2BD77 /* MockProvider.swift */,
+			);
+			path = Web3Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1337,7 +1355,9 @@
 			files = (
 				D1D46867228B4EEE00A2BD77 /* SyncStatusObjectTests.swift in Sources */,
 				D1D4685B228B2BF400A2BD77 /* BlockObjectTests.swift in Sources */,
+				D1D46874228C642200A2BD77 /* MockProvider.swift in Sources */,
 				D1D4685F228B38FF00A2BD77 /* CallParamsTests.swift in Sources */,
+				D1D4686F228C2DB800A2BD77 /* Web3HttpTests.swift in Sources */,
 				D1D46856228B035600A2BD77 /* ABITests.swift in Sources */,
 				D1D46863228B47B000A2BD77 /* QuantityTagTests.swift in Sources */,
 				D1D4686B228C2A2200A2BD77 /* RPCRequestJsonTests.swift in Sources */,
@@ -1413,7 +1433,9 @@
 			files = (
 				D1D46868228B4EEE00A2BD77 /* SyncStatusObjectTests.swift in Sources */,
 				D1D4685C228B2BF400A2BD77 /* BlockObjectTests.swift in Sources */,
+				D1D46875228C642200A2BD77 /* MockProvider.swift in Sources */,
 				D1D46860228B38FF00A2BD77 /* CallParamsTests.swift in Sources */,
+				D1D46870228C2DB800A2BD77 /* Web3HttpTests.swift in Sources */,
 				D1D46857228B035600A2BD77 /* ABITests.swift in Sources */,
 				D1D46864228B47B000A2BD77 /* QuantityTagTests.swift in Sources */,
 				D1D4686C228C2A2200A2BD77 /* RPCRequestJsonTests.swift in Sources */,
@@ -1489,7 +1511,9 @@
 			files = (
 				D1D46869228B4EEE00A2BD77 /* SyncStatusObjectTests.swift in Sources */,
 				D1D4685D228B2BF400A2BD77 /* BlockObjectTests.swift in Sources */,
+				D1D46876228C642200A2BD77 /* MockProvider.swift in Sources */,
 				D1D46861228B38FF00A2BD77 /* CallParamsTests.swift in Sources */,
+				D1D46871228C2DB800A2BD77 /* Web3HttpTests.swift in Sources */,
 				D1D46858228B035600A2BD77 /* ABITests.swift in Sources */,
 				D1D46865228B47B000A2BD77 /* QuantityTagTests.swift in Sources */,
 				D1D4686D228C2A2200A2BD77 /* RPCRequestJsonTests.swift in Sources */,
