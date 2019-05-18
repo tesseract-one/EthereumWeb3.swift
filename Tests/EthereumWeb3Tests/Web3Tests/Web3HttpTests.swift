@@ -17,8 +17,9 @@ import XCTest
 class Web3HttpTests: XCTestCase {
     
     let web3: Web3 = {
-        let infuraUrl = "https://mainnet.infura.io/rFWTF4C1mwjexZVw0LoU"
-        return Web3(rpcURL: infuraUrl)
+//        let infuraUrl = "https://mainnet.infura.io/rFWTF4C1mwjexZVw0LoU"
+//        return Web3(rpcURL: infuraUrl)
+        return Web3(provider: MockProvider())
     }()
     
     func testWeb3ClientVersion() {
@@ -28,7 +29,7 @@ class Web3HttpTests: XCTestCase {
             let response = try? res.get()
             
             XCTAssertNotNil(response, "should not be nil")
-
+            
             expectation.fulfill()
         }
         
@@ -111,7 +112,6 @@ class Web3HttpTests: XCTestCase {
             let response = try? res.get()
             
             XCTAssertNotNil(response, "should not be nil")
-            // Infura won't mine at any time or something's gonna be wrong...
             XCTAssertEqual(response, false, "should be a bool response")
             
             expectation.fulfill()
@@ -157,7 +157,6 @@ class Web3HttpTests: XCTestCase {
             let response = try? res.get()
             
             XCTAssertNotNil(response, "should not be nil")
-            // Infura should not have any accounts...
             XCTAssertEqual(response?.count, 0, "should be an array response")
             
             expectation.fulfill()
