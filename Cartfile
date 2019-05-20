@@ -1,2 +1,2 @@
-github "tesseract-one/EthereumTypes.swift" ~> 0.1
+github "tesseract-one/EthereumTypes.swift" "master"
 github "mxcl/PromiseKit" ~> 6.8

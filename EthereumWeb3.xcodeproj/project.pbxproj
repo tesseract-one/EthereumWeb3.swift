@@ -272,6 +272,45 @@
 		D1D46874228C642200A2BD77 /* MockProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D46873228C642200A2BD77 /* MockProvider.swift */; };
 		D1D46875228C642200A2BD77 /* MockProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D46873228C642200A2BD77 /* MockProvider.swift */; };
 		D1D46876228C642200A2BD77 /* MockProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D46873228C642200A2BD77 /* MockProvider.swift */; };
+		D1E28A242292BB3900A19D4F /* ContractTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E28A232292BB3900A19D4F /* ContractTests.swift */; };
+		D1E28A252292BB3900A19D4F /* ContractTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E28A232292BB3900A19D4F /* ContractTests.swift */; };
+		D1E28A262292BB3900A19D4F /* ContractTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E28A232292BB3900A19D4F /* ContractTests.swift */; };
+		D1E28A382292BBE900A19D4F /* estimateGas.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A2C2292BBE800A19D4F /* estimateGas.json */; };
+		D1E28A392292BBE900A19D4F /* estimateGas.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A2C2292BBE800A19D4F /* estimateGas.json */; };
+		D1E28A3A2292BBE900A19D4F /* estimateGas.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A2C2292BBE800A19D4F /* estimateGas.json */; };
+		D1E28A3B2292BBE900A19D4F /* Fallback.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A2D2292BBE800A19D4F /* Fallback.json */; };
+		D1E28A3C2292BBE900A19D4F /* Fallback.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A2D2292BBE800A19D4F /* Fallback.json */; };
+		D1E28A3D2292BBE900A19D4F /* Fallback.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A2D2292BBE800A19D4F /* Fallback.json */; };
+		D1E28A3E2292BBE900A19D4F /* LimitedMintableNonFungibleToken.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A2E2292BBE800A19D4F /* LimitedMintableNonFungibleToken.json */; };
+		D1E28A3F2292BBE900A19D4F /* LimitedMintableNonFungibleToken.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A2E2292BBE800A19D4F /* LimitedMintableNonFungibleToken.json */; };
+		D1E28A402292BBE900A19D4F /* LimitedMintableNonFungibleToken.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A2E2292BBE800A19D4F /* LimitedMintableNonFungibleToken.json */; };
+		D1E28A412292BBE900A19D4F /* getBlock2.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A2F2292BBE800A19D4F /* getBlock2.json */; };
+		D1E28A422292BBE900A19D4F /* getBlock2.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A2F2292BBE800A19D4F /* getBlock2.json */; };
+		D1E28A432292BBE900A19D4F /* getBlock2.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A2F2292BBE800A19D4F /* getBlock2.json */; };
+		D1E28A442292BBE900A19D4F /* sendTransaction.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A302292BBE800A19D4F /* sendTransaction.json */; };
+		D1E28A452292BBE900A19D4F /* sendTransaction.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A302292BBE800A19D4F /* sendTransaction.json */; };
+		D1E28A462292BBE900A19D4F /* sendTransaction.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A302292BBE800A19D4F /* sendTransaction.json */; };
+		D1E28A472292BBE900A19D4F /* getBlock3.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A312292BBE800A19D4F /* getBlock3.json */; };
+		D1E28A482292BBE900A19D4F /* getBlock3.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A312292BBE800A19D4F /* getBlock3.json */; };
+		D1E28A492292BBE900A19D4F /* getBlock3.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A312292BBE800A19D4F /* getBlock3.json */; };
+		D1E28A4A2292BBE900A19D4F /* call_getBalance.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A322292BBE800A19D4F /* call_getBalance.json */; };
+		D1E28A4B2292BBE900A19D4F /* call_getBalance.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A322292BBE800A19D4F /* call_getBalance.json */; };
+		D1E28A4C2292BBE900A19D4F /* call_getBalance.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A322292BBE800A19D4F /* call_getBalance.json */; };
+		D1E28A4D2292BBE900A19D4F /* call_tuple.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A332292BBE900A19D4F /* call_tuple.json */; };
+		D1E28A4E2292BBE900A19D4F /* call_tuple.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A332292BBE900A19D4F /* call_tuple.json */; };
+		D1E28A4F2292BBE900A19D4F /* call_tuple.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A332292BBE900A19D4F /* call_tuple.json */; };
+		D1E28A502292BBE900A19D4F /* TupleExample.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A342292BBE900A19D4F /* TupleExample.json */; };
+		D1E28A512292BBE900A19D4F /* TupleExample.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A342292BBE900A19D4F /* TupleExample.json */; };
+		D1E28A522292BBE900A19D4F /* TupleExample.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A342292BBE900A19D4F /* TupleExample.json */; };
+		D1E28A532292BBE900A19D4F /* getBlock1.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A352292BBE900A19D4F /* getBlock1.json */; };
+		D1E28A542292BBE900A19D4F /* getBlock1.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A352292BBE900A19D4F /* getBlock1.json */; };
+		D1E28A552292BBE900A19D4F /* getBlock1.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A352292BBE900A19D4F /* getBlock1.json */; };
+		D1E28A562292BBE900A19D4F /* ERC721.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A362292BBE900A19D4F /* ERC721.json */; };
+		D1E28A572292BBE900A19D4F /* ERC721.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A362292BBE900A19D4F /* ERC721.json */; };
+		D1E28A582292BBE900A19D4F /* ERC721.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A362292BBE900A19D4F /* ERC721.json */; };
+		D1E28A592292BBE900A19D4F /* getTransactionReceipt.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A372292BBE900A19D4F /* getTransactionReceipt.json */; };
+		D1E28A5A2292BBE900A19D4F /* getTransactionReceipt.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A372292BBE900A19D4F /* getTransactionReceipt.json */; };
+		D1E28A5B2292BBE900A19D4F /* getTransactionReceipt.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A372292BBE900A19D4F /* getTransactionReceipt.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -489,6 +528,19 @@
 		D1D4686A228C2A2200A2BD77 /* RPCRequestJsonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPCRequestJsonTests.swift; sourceTree = "<group>"; };
 		D1D4686E228C2DB800A2BD77 /* Web3HttpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web3HttpTests.swift; sourceTree = "<group>"; };
 		D1D46873228C642200A2BD77 /* MockProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockProvider.swift; sourceTree = "<group>"; };
+		D1E28A232292BB3900A19D4F /* ContractTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractTests.swift; sourceTree = "<group>"; };
+		D1E28A2C2292BBE800A19D4F /* estimateGas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = estimateGas.json; sourceTree = "<group>"; };
+		D1E28A2D2292BBE800A19D4F /* Fallback.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Fallback.json; sourceTree = "<group>"; };
+		D1E28A2E2292BBE800A19D4F /* LimitedMintableNonFungibleToken.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LimitedMintableNonFungibleToken.json; sourceTree = "<group>"; };
+		D1E28A2F2292BBE800A19D4F /* getBlock2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getBlock2.json; sourceTree = "<group>"; };
+		D1E28A302292BBE800A19D4F /* sendTransaction.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sendTransaction.json; sourceTree = "<group>"; };
+		D1E28A312292BBE800A19D4F /* getBlock3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getBlock3.json; sourceTree = "<group>"; };
+		D1E28A322292BBE800A19D4F /* call_getBalance.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = call_getBalance.json; sourceTree = "<group>"; };
+		D1E28A332292BBE900A19D4F /* call_tuple.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = call_tuple.json; sourceTree = "<group>"; };
+		D1E28A342292BBE900A19D4F /* TupleExample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TupleExample.json; sourceTree = "<group>"; };
+		D1E28A352292BBE900A19D4F /* getBlock1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getBlock1.json; sourceTree = "<group>"; };
+		D1E28A362292BBE900A19D4F /* ERC721.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ERC721.json; sourceTree = "<group>"; };
+		D1E28A372292BBE900A19D4F /* getTransactionReceipt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getTransactionReceipt.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -650,6 +702,8 @@
 		927C5A9E224E4D3400F2AA50 /* EthereumWeb3Tests */ = {
 			isa = PBXGroup;
 			children = (
+				D1E28A5C2292BBF300A19D4F /* Stubs */,
+				D1E28A222292BB1800A19D4F /* ContractTests */,
 				D1D46872228C2DC600A2BD77 /* Web3Tests */,
 				D1D46859228B2BC500A2BD77 /* JsonTests */,
 				D1D46854228B034600A2BD77 /* ABITests */,
@@ -871,6 +925,33 @@
 				D1D46873228C642200A2BD77 /* MockProvider.swift */,
 			);
 			path = Web3Tests;
+			sourceTree = "<group>";
+		};
+		D1E28A222292BB1800A19D4F /* ContractTests */ = {
+			isa = PBXGroup;
+			children = (
+				D1E28A232292BB3900A19D4F /* ContractTests.swift */,
+			);
+			path = ContractTests;
+			sourceTree = "<group>";
+		};
+		D1E28A5C2292BBF300A19D4F /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				D1E28A322292BBE800A19D4F /* call_getBalance.json */,
+				D1E28A332292BBE900A19D4F /* call_tuple.json */,
+				D1E28A362292BBE900A19D4F /* ERC721.json */,
+				D1E28A2C2292BBE800A19D4F /* estimateGas.json */,
+				D1E28A2D2292BBE800A19D4F /* Fallback.json */,
+				D1E28A352292BBE900A19D4F /* getBlock1.json */,
+				D1E28A2F2292BBE800A19D4F /* getBlock2.json */,
+				D1E28A312292BBE800A19D4F /* getBlock3.json */,
+				D1E28A372292BBE900A19D4F /* getTransactionReceipt.json */,
+				D1E28A2E2292BBE800A19D4F /* LimitedMintableNonFungibleToken.json */,
+				D1E28A302292BBE800A19D4F /* sendTransaction.json */,
+				D1E28A342292BBE900A19D4F /* TupleExample.json */,
+			);
+			path = Stubs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1228,6 +1309,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1E28A442292BBE900A19D4F /* sendTransaction.json in Resources */,
+				D1E28A3E2292BBE900A19D4F /* LimitedMintableNonFungibleToken.json in Resources */,
+				D1E28A382292BBE900A19D4F /* estimateGas.json in Resources */,
+				D1E28A4D2292BBE900A19D4F /* call_tuple.json in Resources */,
+				D1E28A502292BBE900A19D4F /* TupleExample.json in Resources */,
+				D1E28A3B2292BBE900A19D4F /* Fallback.json in Resources */,
+				D1E28A592292BBE900A19D4F /* getTransactionReceipt.json in Resources */,
+				D1E28A562292BBE900A19D4F /* ERC721.json in Resources */,
+				D1E28A4A2292BBE900A19D4F /* call_getBalance.json in Resources */,
+				D1E28A472292BBE900A19D4F /* getBlock3.json in Resources */,
+				D1E28A532292BBE900A19D4F /* getBlock1.json in Resources */,
+				D1E28A412292BBE900A19D4F /* getBlock2.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1249,6 +1342,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1E28A452292BBE900A19D4F /* sendTransaction.json in Resources */,
+				D1E28A3F2292BBE900A19D4F /* LimitedMintableNonFungibleToken.json in Resources */,
+				D1E28A392292BBE900A19D4F /* estimateGas.json in Resources */,
+				D1E28A4E2292BBE900A19D4F /* call_tuple.json in Resources */,
+				D1E28A512292BBE900A19D4F /* TupleExample.json in Resources */,
+				D1E28A3C2292BBE900A19D4F /* Fallback.json in Resources */,
+				D1E28A5A2292BBE900A19D4F /* getTransactionReceipt.json in Resources */,
+				D1E28A572292BBE900A19D4F /* ERC721.json in Resources */,
+				D1E28A4B2292BBE900A19D4F /* call_getBalance.json in Resources */,
+				D1E28A482292BBE900A19D4F /* getBlock3.json in Resources */,
+				D1E28A542292BBE900A19D4F /* getBlock1.json in Resources */,
+				D1E28A422292BBE900A19D4F /* getBlock2.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1270,6 +1375,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1E28A462292BBE900A19D4F /* sendTransaction.json in Resources */,
+				D1E28A402292BBE900A19D4F /* LimitedMintableNonFungibleToken.json in Resources */,
+				D1E28A3A2292BBE900A19D4F /* estimateGas.json in Resources */,
+				D1E28A4F2292BBE900A19D4F /* call_tuple.json in Resources */,
+				D1E28A522292BBE900A19D4F /* TupleExample.json in Resources */,
+				D1E28A3D2292BBE900A19D4F /* Fallback.json in Resources */,
+				D1E28A5B2292BBE900A19D4F /* getTransactionReceipt.json in Resources */,
+				D1E28A582292BBE900A19D4F /* ERC721.json in Resources */,
+				D1E28A4C2292BBE900A19D4F /* call_getBalance.json in Resources */,
+				D1E28A492292BBE900A19D4F /* getBlock3.json in Resources */,
+				D1E28A552292BBE900A19D4F /* getBlock1.json in Resources */,
+				D1E28A432292BBE900A19D4F /* getBlock2.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1358,6 +1475,7 @@
 				D1D46874228C642200A2BD77 /* MockProvider.swift in Sources */,
 				D1D4685F228B38FF00A2BD77 /* CallParamsTests.swift in Sources */,
 				D1D4686F228C2DB800A2BD77 /* Web3HttpTests.swift in Sources */,
+				D1E28A242292BB3900A19D4F /* ContractTests.swift in Sources */,
 				D1D46856228B035600A2BD77 /* ABITests.swift in Sources */,
 				D1D46863228B47B000A2BD77 /* QuantityTagTests.swift in Sources */,
 				D1D4686B228C2A2200A2BD77 /* RPCRequestJsonTests.swift in Sources */,
@@ -1436,6 +1554,7 @@
 				D1D46875228C642200A2BD77 /* MockProvider.swift in Sources */,
 				D1D46860228B38FF00A2BD77 /* CallParamsTests.swift in Sources */,
 				D1D46870228C2DB800A2BD77 /* Web3HttpTests.swift in Sources */,
+				D1E28A252292BB3900A19D4F /* ContractTests.swift in Sources */,
 				D1D46857228B035600A2BD77 /* ABITests.swift in Sources */,
 				D1D46864228B47B000A2BD77 /* QuantityTagTests.swift in Sources */,
 				D1D4686C228C2A2200A2BD77 /* RPCRequestJsonTests.swift in Sources */,
@@ -1514,6 +1633,7 @@
 				D1D46876228C642200A2BD77 /* MockProvider.swift in Sources */,
 				D1D46861228B38FF00A2BD77 /* CallParamsTests.swift in Sources */,
 				D1D46871228C2DB800A2BD77 /* Web3HttpTests.swift in Sources */,
+				D1E28A262292BB3900A19D4F /* ContractTests.swift in Sources */,
 				D1D46858228B035600A2BD77 /* ABITests.swift in Sources */,
 				D1D46865228B47B000A2BD77 /* QuantityTagTests.swift in Sources */,
 				D1D4686D228C2A2200A2BD77 /* RPCRequestJsonTests.swift in Sources */,
