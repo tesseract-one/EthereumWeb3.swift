@@ -7,6 +7,7 @@
 
 import Foundation
 import Ethereum
+import Serializable
 
 public enum ContractParsingError: Error, LocalizedError {
     case invalidKey
@@ -21,6 +22,18 @@ public enum ContractParsingError: Error, LocalizedError {
 
 public extension Web3.Eth {
     
+    private static let _decoder: JSONDecoder = {
+        let dec = JSONDecoder()
+        dec.dataDecodingStrategy = .base64
+        return dec
+    }()
+    
+    private static let _encoder: JSONEncoder = {
+        let enc = JSONEncoder()
+        enc.dataEncodingStrategy = .base64
+        return enc
+    }()
+    
     /// Initialize an instance of a dynamic EthereumContract from data
     ///
     /// - Parameters:
@@ -31,18 +44,17 @@ public extension Web3.Eth {
     /// - Returns: Instance of the dynamic contract from the data provided
     /// - Throws: Error when the ABI data cannot be decoded
     func Contract(json data: Data, abiKey: String?, address: Address?) throws -> DynamicContract {
-        let decoder = JSONDecoder()
         // Many tools generate a JSON file or response that includes the actual ABI nested under another key
         if let key = abiKey {
-            let containerObject = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
-            if let nestedObject = containerObject?[key] {
-                let nestedData = try JSONSerialization.data(withJSONObject: nestedObject, options: [])
-                let abi = try decoder.decode([ABIObject].self, from: nestedData)
+            let containerObject = try Web3.Eth._decoder.decode(SerializableValue.self, from: data)
+            if let nestedObject = containerObject.object?[key] {
+                let nestedData = try Web3.Eth._encoder.encode(nestedObject)
+                let abi = try Web3.Eth._decoder.decode([ABIObject].self, from: nestedData)
                 return Contract(abi: abi, address: address)
             }
             throw ContractParsingError.invalidKey
         } else {
-            let abi = try decoder.decode([ABIObject].self, from: data)
+            let abi = try Web3.Eth._decoder.decode([ABIObject].self, from: data)
             return Contract(abi: abi, address: address)
         }
     }
