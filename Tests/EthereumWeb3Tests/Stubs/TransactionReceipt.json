@@ -1,4 +1,5 @@
 {
+    "id": 1,
     "jsonrpc": "2.0",
     "result": {
         "blockHash": "0x1c07704bda90fca959d6c4028162b69847b399406898fdaefd207810a738ee45",
@@ -36,6 +37,5 @@
         "status": "0x1",
         "transactionHash": "0xe2b488944c6bb1f2c0b00298fb0c9de383295a11c382d8744370672214fb3f1f",
         "transactionIndex": "0x1"
-    },
-    "id": 0
+    }
 }

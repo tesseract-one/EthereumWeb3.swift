@@ -18,12 +18,13 @@ import Serializable
 
 class MockProvider: DataProvider, Provider {
     
-    static func web3(req: String, res: String) -> Web3 {
-        return Web3(provider: MockProvider(request: req, response: res))
+    static func web3(method: String, req: String, res: String) -> Web3 {
+        let provider = MockProvider()
+        provider.addMethod(method: method, req: req, res: res)
+        return Web3(provider: provider)
     }
 
-    let request: String
-    let response: String
+    var testMethods: [String: (req: String, res: String)]
     
     private let encoder: JSONEncoder = {
         let enc = JSONEncoder()
@@ -38,11 +39,14 @@ class MockProvider: DataProvider, Provider {
     
     let queue: DispatchQueue
     
-    init(request: String, response: String) {
+    init() {
         queue = DispatchQueue.global()
         
-        self.request = request
-        self.response = response
+        self.testMethods = [:]
+    }
+    
+    func addMethod(method: String, req: String, res: String) {
+        testMethods[method] = (req: req, res: res)
     }
     
     func send(data: Data, response: @escaping (Swift.Result<Data, Error>) -> Void) {}
@@ -50,7 +54,11 @@ class MockProvider: DataProvider, Provider {
     func send<Params, Result>(request: RPCRequest<Params>, response: @escaping Completion<Result>) {
         queue.async {
             do {
-                let decodedExpectedReq = try self.decoder.decode(SerializableValue.self, from: self.request.data(using: .utf8)!)
+                guard let (req, res) = self.testMethods[request.method] else {
+                    response(.failure(.requestFailed(nil)))
+                    return
+                }
+                let decodedExpectedReq = try self.decoder.decode(SerializableValue.self, from: req.data(using: .utf8)!)
                 let encodedReq = try self.encoder.encode(request)
                 let decodedReq = try self.decoder.decode(SerializableValue.self, from: encodedReq)
                 guard decodedExpectedReq == decodedReq else {
@@ -58,7 +66,7 @@ class MockProvider: DataProvider, Provider {
                     return
                 }
                 
-                let responseData = self.response.data(using: .utf8)!
+                let responseData = res.data(using: .utf8)!
                 let decodedResponse = try self.decoder.decode(RPCResponse<Result>.self, from: responseData)
                 response(Swift.Result(rpcResponse: decodedResponse))
             } catch {
