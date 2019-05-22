@@ -132,8 +132,8 @@ class ContractTests: XCTestCase {
             .send(from: .testAddress, value: 0, gas: 15000, gasPrice: nil)
             .done { hash in
                 expectation.fulfill()
-            }.catch { error in
-                XCTAssertEqual(false, true, "should not fail")
+            }.catch { err in
+                XCTFail("should not fail, error: \(err)")
                 
                 expectation.fulfill()
             }
@@ -152,8 +152,8 @@ class ContractTests: XCTestCase {
                 XCTAssertEqual(values["_balance"] as? BigUInt, 1, "should succeed with call")
                 
                 expectation1.fulfill()
-            }.catch { error in
-                XCTAssertEqual(false, true, "should not fail")
+            }.catch { err in
+                XCTFail("should not fail, error: \(err)")
                 
                 expectation1.fulfill()
             }
@@ -180,8 +180,8 @@ class ContractTests: XCTestCase {
             invocation.estimateGas(from: .testAddress, value: Quantity(BigUInt(10).power(18)))
         }.done { gas in
             expectation1.fulfill()
-        }.catch { error in
-            XCTAssertEqual(false, true, "should not fail")
+        }.catch { err in
+            XCTFail("should not fail, error: \(err)")
             
             expectation1.fulfill()
         }
@@ -193,8 +193,8 @@ class ContractTests: XCTestCase {
             XCTAssertEqual(hash, expectedHash, "should succeed with send")
             
             expectation2.fulfill()
-        }.catch { error in
-            XCTAssertEqual(false, true, "should not fail")
+        }.catch { err in
+            XCTFail("should not fail, error: \(err)")
             
             expectation2.fulfill()
         }
@@ -221,8 +221,8 @@ class ContractTests: XCTestCase {
                 XCTAssertEqual(hash, expectedHash, "should succeed with send")
                 
                 expectation1.fulfill()
-            }.catch { error in
-                XCTAssertEqual(false, true, "should not fail")
+            }.catch { err in
+                XCTFail("should not fail, error: \(err)")
                 
                 expectation1.fulfill()
             }
@@ -253,8 +253,8 @@ class ContractTests: XCTestCase {
                     }
                 }
             }
-        }.catch { error in
-            XCTAssertEqual(false, true, "should not fail")
+        }.catch { err in
+            XCTFail("should not fail, error: \(err)")
             
             expectation.fulfill()
         }

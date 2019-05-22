@@ -311,6 +311,12 @@
 		D1E28A592292BBE900A19D4F /* getTransactionReceipt.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A372292BBE900A19D4F /* getTransactionReceipt.json */; };
 		D1E28A5A2292BBE900A19D4F /* getTransactionReceipt.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A372292BBE900A19D4F /* getTransactionReceipt.json */; };
 		D1E28A5B2292BBE900A19D4F /* getTransactionReceipt.json in Resources */ = {isa = PBXBuildFile; fileRef = D1E28A372292BBE900A19D4F /* getTransactionReceipt.json */; };
+		D1E28A5E2292DFFE00A19D4F /* JSONContractTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E28A5D2292DFFE00A19D4F /* JSONContractTests.swift */; };
+		D1E28A5F2292DFFE00A19D4F /* JSONContractTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E28A5D2292DFFE00A19D4F /* JSONContractTests.swift */; };
+		D1E28A602292DFFE00A19D4F /* JSONContractTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E28A5D2292DFFE00A19D4F /* JSONContractTests.swift */; };
+		D1FA6FE122941CBE00D2A5A6 /* TransactionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FA6FE022941CBE00D2A5A6 /* TransactionTests.swift */; };
+		D1FA6FE222941CBE00D2A5A6 /* TransactionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FA6FE022941CBE00D2A5A6 /* TransactionTests.swift */; };
+		D1FA6FE322941CBE00D2A5A6 /* TransactionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FA6FE022941CBE00D2A5A6 /* TransactionTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -541,6 +547,8 @@
 		D1E28A352292BBE900A19D4F /* getBlock1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getBlock1.json; sourceTree = "<group>"; };
 		D1E28A362292BBE900A19D4F /* ERC721.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ERC721.json; sourceTree = "<group>"; };
 		D1E28A372292BBE900A19D4F /* getTransactionReceipt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getTransactionReceipt.json; sourceTree = "<group>"; };
+		D1E28A5D2292DFFE00A19D4F /* JSONContractTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONContractTests.swift; sourceTree = "<group>"; };
+		D1FA6FE022941CBE00D2A5A6 /* TransactionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -702,6 +710,8 @@
 		927C5A9E224E4D3400F2AA50 /* EthereumWeb3Tests */ = {
 			isa = PBXGroup;
 			children = (
+				D1D46873228C642200A2BD77 /* MockProvider.swift */,
+				D1FA6FDF22941C9300D2A5A6 /* TransactionTests */,
 				D1E28A5C2292BBF300A19D4F /* Stubs */,
 				D1E28A222292BB1800A19D4F /* ContractTests */,
 				D1D46872228C2DC600A2BD77 /* Web3Tests */,
@@ -922,7 +932,6 @@
 			isa = PBXGroup;
 			children = (
 				D1D4686E228C2DB800A2BD77 /* Web3HttpTests.swift */,
-				D1D46873228C642200A2BD77 /* MockProvider.swift */,
 			);
 			path = Web3Tests;
 			sourceTree = "<group>";
@@ -931,6 +940,7 @@
 			isa = PBXGroup;
 			children = (
 				D1E28A232292BB3900A19D4F /* ContractTests.swift */,
+				D1E28A5D2292DFFE00A19D4F /* JSONContractTests.swift */,
 			);
 			path = ContractTests;
 			sourceTree = "<group>";
@@ -952,6 +962,14 @@
 				D1E28A342292BBE900A19D4F /* TupleExample.json */,
 			);
 			path = Stubs;
+			sourceTree = "<group>";
+		};
+		D1FA6FDF22941C9300D2A5A6 /* TransactionTests */ = {
+			isa = PBXGroup;
+			children = (
+				D1FA6FE022941CBE00D2A5A6 /* TransactionTests.swift */,
+			);
+			path = TransactionTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1473,8 +1491,10 @@
 				D1D46867228B4EEE00A2BD77 /* SyncStatusObjectTests.swift in Sources */,
 				D1D4685B228B2BF400A2BD77 /* BlockObjectTests.swift in Sources */,
 				D1D46874228C642200A2BD77 /* MockProvider.swift in Sources */,
+				D1E28A5E2292DFFE00A19D4F /* JSONContractTests.swift in Sources */,
 				D1D4685F228B38FF00A2BD77 /* CallParamsTests.swift in Sources */,
 				D1D4686F228C2DB800A2BD77 /* Web3HttpTests.swift in Sources */,
+				D1FA6FE122941CBE00D2A5A6 /* TransactionTests.swift in Sources */,
 				D1E28A242292BB3900A19D4F /* ContractTests.swift in Sources */,
 				D1D46856228B035600A2BD77 /* ABITests.swift in Sources */,
 				D1D46863228B47B000A2BD77 /* QuantityTagTests.swift in Sources */,
@@ -1552,8 +1572,10 @@
 				D1D46868228B4EEE00A2BD77 /* SyncStatusObjectTests.swift in Sources */,
 				D1D4685C228B2BF400A2BD77 /* BlockObjectTests.swift in Sources */,
 				D1D46875228C642200A2BD77 /* MockProvider.swift in Sources */,
+				D1E28A5F2292DFFE00A19D4F /* JSONContractTests.swift in Sources */,
 				D1D46860228B38FF00A2BD77 /* CallParamsTests.swift in Sources */,
 				D1D46870228C2DB800A2BD77 /* Web3HttpTests.swift in Sources */,
+				D1FA6FE222941CBE00D2A5A6 /* TransactionTests.swift in Sources */,
 				D1E28A252292BB3900A19D4F /* ContractTests.swift in Sources */,
 				D1D46857228B035600A2BD77 /* ABITests.swift in Sources */,
 				D1D46864228B47B000A2BD77 /* QuantityTagTests.swift in Sources */,
@@ -1631,8 +1653,10 @@
 				D1D46869228B4EEE00A2BD77 /* SyncStatusObjectTests.swift in Sources */,
 				D1D4685D228B2BF400A2BD77 /* BlockObjectTests.swift in Sources */,
 				D1D46876228C642200A2BD77 /* MockProvider.swift in Sources */,
+				D1E28A602292DFFE00A19D4F /* JSONContractTests.swift in Sources */,
 				D1D46861228B38FF00A2BD77 /* CallParamsTests.swift in Sources */,
 				D1D46871228C2DB800A2BD77 /* Web3HttpTests.swift in Sources */,
+				D1FA6FE322941CBE00D2A5A6 /* TransactionTests.swift in Sources */,
 				D1E28A262292BB3900A19D4F /* ContractTests.swift in Sources */,
 				D1D46858228B035600A2BD77 /* ABITests.swift in Sources */,
 				D1D46865228B47B000A2BD77 /* QuantityTagTests.swift in Sources */,
