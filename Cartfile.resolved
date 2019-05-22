@@ -1,5 +1,5 @@
 github "attaswift/BigInt" "v4.0.0"
 github "krzyzanowskim/CryptoSwift" "1.0.0"
 github "mxcl/PromiseKit" "6.8.4"
-github "tesseract-one/EthereumTypes.swift" "7bc37491ed46b1060058701944099cd01e473a4a"
+github "tesseract-one/EthereumTypes.swift" "0.1.9"
 github "tesseract-one/Serializable.swift" "0.1.5"

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Tesseract.EthereumWeb3'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'Tesseract Ethereum Web3 library with signing support for Swift'
 
   s.description      = <<-DESC
@@ -21,6 +21,8 @@ Supports eth, net and personal RPC api. Filters handled by polling on client.
   s.watchos.deployment_target = '2.0'
 
   s.module_name = 'EthereumWeb3'
+
+  s.swift_versions = ['5.0']
 
   s.subspec 'Core' do |ss|
     ss.source_files = 'Sources/EthereumWeb3/**/*.swift'
