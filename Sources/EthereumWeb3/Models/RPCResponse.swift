@@ -9,6 +9,20 @@
 import Foundation
 import Ethereum
 
+public struct RPCError: Swift.Error, Codable {
+    
+    /// The error code
+    public let code: Int
+    
+    /// The error message
+    public let message: String
+    
+    /// Description
+    public var localizedDescription: String {
+        return "RPC Error (\(code)) \(message)"
+    }
+}
+
 public struct RPCResponse<Result: Codable>: Codable {
 
     /// The rpc id
@@ -21,21 +35,7 @@ public struct RPCResponse<Result: Codable>: Codable {
     public let result: Result?
 
     /// The error
-    public let error: Error?
-
-    public struct Error: Swift.Error, Codable {
-
-        /// The error code
-        public let code: Int
-
-        /// The error message
-        public let message: String
-        
-        /// Description
-        public var localizedDescription: String {
-            return "RPC Error (\(code)) \(message)"
-        }
-    }
+    public let error: RPCError?
 }
 
 public typealias BasicRPCResponse = RPCResponse<Value>

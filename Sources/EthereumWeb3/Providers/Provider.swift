@@ -19,7 +19,7 @@ public enum ProviderError: Swift.Error {
     case connectionFailed(Swift.Error?)
     case serverError(Swift.Error?)
     case signProviderError(SignProviderError)
-    case rpcError(Swift.Error)
+    case rpcError(RPCError)
     case decodingError(Swift.Error?)
 }
 
