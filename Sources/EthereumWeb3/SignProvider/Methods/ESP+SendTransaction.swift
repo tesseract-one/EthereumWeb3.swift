@@ -61,7 +61,7 @@ extension EthereumSignProvider {
                 return
             case .success(let gas):
                 var mTx = tx
-                mTx.gas = gas
+                mTx.gas = Quantity((gas.quantity * 13)/10) // estimateGas can be incorrect sometimes, adding 30% to top
                 guard mTx.gasPrice == nil else {
                     cb(.success(mTx))
                     return
