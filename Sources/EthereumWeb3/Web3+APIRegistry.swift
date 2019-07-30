@@ -37,17 +37,19 @@ public extension Web3 {
     
     init(
         rpcURL: String, sign: SignProvider, chainId: UInt64? = nil,
-        handleFilters: Bool = true, session: URLSession = URLSession(configuration: .default)
+        handleFilters: Bool = true,
+        session: URLSession = URLSession(configuration: .default),
+        headers: Dictionary<String, String>? = nil
     ) {
         let counter = AtomicCounter()
         let provider: Provider
         if handleFilters {
             provider = HttpProviderFilterHandler(
-                HttpProvider(rpcURL: rpcURL, session: session),
+                HttpProvider(rpcURL: rpcURL, session: session, headers: headers),
                 counter: counter
             )
         } else {
-            provider = HttpProvider(rpcURL: rpcURL, session: session)
+            provider = HttpProvider(rpcURL: rpcURL, session: session, headers: headers)
         }
         self.init(provider: provider, sign: sign, chainId: chainId, rpcIdCounter: counter)
     }
@@ -57,12 +59,13 @@ public extension ModuleAPIRegistry {
     
     func Web3(
         rpcUrl: String, chainId: UInt64? = nil,
-        session: URLSession = URLSession(configuration: .default)
+        session: URLSession = URLSession(configuration: .default),
+        headers: Dictionary<String, String>? = nil
     ) -> Web3 {
         return Web3Class(
             rpcURL: rpcUrl, sign: signProvider,
             chainId: chainId, handleFilters: true,
-            session: session
+            session: session, headers: headers
         )
     }
     
@@ -81,12 +84,13 @@ public extension InstanceAPIRegistry {
     
     func web3(
         rpcUrl: String, chainId: UInt64? = nil,
-        session: URLSession = URLSession(configuration: .default)
+        session: URLSession = URLSession(configuration: .default),
+        headers: Dictionary<String, String>? = nil
     ) -> Web3 {
         return Web3Class(
             rpcURL: rpcUrl, sign: signProvider,
             chainId: chainId, handleFilters: true,
-            session: session
+            session: session, headers: headers
         )
     }
     

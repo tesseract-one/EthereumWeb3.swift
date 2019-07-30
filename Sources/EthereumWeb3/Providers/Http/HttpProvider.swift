@@ -22,19 +22,29 @@ public struct HttpProvider: Provider, DataProvider {
     let queue: DispatchQueue
 
     let session: URLSession
+    let headers: Dictionary<String, String>
 
-    static let headers = [
+    static let basicHeaders = [
         "Accept": "application/json",
         "Content-Type": "application/json"
     ]
 
     public let rpcURL: String
 
-    public init(rpcURL: String, session: URLSession = URLSession(configuration: .default)) {
+    public init(
+        rpcURL: String, session: URLSession = URLSession(configuration: .default), headers: Dictionary<String, String>? = nil
+    ) {
         self.rpcURL = rpcURL
         self.session = session
         // Concurrent queue for faster concurrent requests
         self.queue = DispatchQueue.global(qos: .userInitiated)
+        var combinedHeaders = type(of: self).basicHeaders
+        if let headers = headers {
+            for (k, v) in headers {
+                combinedHeaders.updateValue(v, forKey: k)
+            }
+        }
+        self.headers = combinedHeaders
     }
     
     public func send(data: Data, response: @escaping (Swift.Result<Data, Swift.Error>) -> Void) {
@@ -47,7 +57,7 @@ public struct HttpProvider: Provider, DataProvider {
             var req = URLRequest(url: url)
             req.httpMethod = "POST"
             req.httpBody = data
-            for (k, v) in type(of: self).headers {
+            for (k, v) in self.headers {
                 req.addValue(v, forHTTPHeaderField: k)
             }
             
